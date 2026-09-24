@@ -35,8 +35,8 @@ El buscador de moda local con probador virtual.
 | Juan Nicolás Álvarez |
 | Camilo Ortiz |
 | Daniel Valero |
-| Juan Diego Valder |
-| Paula Alejandra Diazrama |
+| Juan Diego Valderrama |
+| Paula Alejandra Diaz |
 
 Curso: **Desarrollo y Operaciones de Software (DOSW)** · Escuela Colombiana de Ingeniería Julio Garavito · 2026
 
