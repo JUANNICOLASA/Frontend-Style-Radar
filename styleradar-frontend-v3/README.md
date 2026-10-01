@@ -8,7 +8,7 @@
 
 El buscador de moda local con probador virtual.
 
-[**Ver el prototipo v3 →**](https://claude.ai/artifact/5KQCTxq6kJB9m98QKoA4s8) · [Manual de identidad v3](docs/StyleRadar_Manual_de_Identidad.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación](docs/StyleRadar_Presentacion.pdf)
+[**Ver el prototipo v3 →**](prototipo/index.html) · [Manual de identidad v3](docs/StyleRadar_Manual_de_Identidad.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
 
 </div>
 
@@ -87,7 +87,7 @@ styleradar-frontend/
 ├── docs/
 │   ├── StyleRadar_Manual_de_Identidad.html   Manual de identidad v3
 │   ├── StyleRadar_Informe_de_cambios_v3.docx Informe de cambios y respuesta a la revisión (parte 2)
-│   ├── StyleRadar_Presentacion.pdf           Presentación del proyecto (Sprint 1)
+│   ├── StyleRadar_Presentacion.pdf           Presentación del Sprint 2
 │   └── historico/
 │       └── StyleRadar_Manual_de_Identidad_v1.pdf
 ├── assets/
@@ -102,9 +102,7 @@ styleradar-frontend/
 
 ## Cómo ver el prototipo
 
-- **En línea:** https://claude.ai/artifact/5KQCTxq6kJB9m98QKoA4s8
-- **Sin internet:** abre [`prototipo/index.html`](prototipo/index.html) con doble clic (Chrome, Edge o Firefox). Todo el código, las fotos y los estilos están dentro de ese archivo.
-- **Desde IntelliJ:** clic derecho sobre `prototipo/index.html` → *Open In* → *Browser*.
+Abrir [`prototipo/index.html`](prototipo/index.html) en Chrome, Edge o Firefox. Todo el código, las fotos y los estilos están dentro de ese archivo, así que funciona sin conexión.
 
 El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cuentas de prueba** del inicio de sesión. La contraseña de todas es `1234`:
 
@@ -123,14 +121,14 @@ El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cue
 |---|---|---|
 | Sprint 1 | Mockups v1 | Identidad inicial, presentación, 12 módulos navegables para los cuatro actores y criterios de UX ([capturas](assets/mockups-sprint1)) |
 | Sprint 2 | Prototipo v2 | Respuesta a la revisión de mockups (parte 1) |
-| Sprint 2 | Prototipo v3 | Respuesta a la revisión (parte 2), análisis de requerimientos, manual de identidad v3 dentro de la plataforma y ajustes finales |
+| Sprint 2 | Prototipo v3 | Respuesta a la revisión (parte 2), análisis de requerimientos, manual de identidad v3 dentro de la plataforma, ajustes finales y [presentación del sprint](docs/StyleRadar_Presentacion.pdf) |
 
 ### Sprint 1 · Mockups v1
 
 - Prototipo navegable con interfaces separadas para usuario, tienda, fundación y administrador.
 - 12 módulos: acceso, inicio, catálogo, mapa y tiendas, probador virtual, playlists, segunda vida, perfil, panel de tienda, panel de fundación, administración y versión móvil.
 - Estados de error y estados vacíos en cada formulario y listado.
-- Manual de identidad v1 ([PDF](docs/historico/StyleRadar_Manual_de_Identidad_v1.pdf)) y [presentación del proyecto](docs/StyleRadar_Presentacion.pdf).
+- Manual de identidad v1 ([PDF](docs/historico/StyleRadar_Manual_de_Identidad_v1.pdf)).
 
 ### Sprint 2 · Prototipo v2 (revisión de mockups, parte 1)
 
