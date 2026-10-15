@@ -8,13 +8,13 @@
 
 El buscador de moda local con probador virtual.
 
-[**Ver el prototipo v3 →**](prototipo/index.html) · [Manual de identidad v3](docs/StyleRadar_Manual_de_Identidad.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
+[**Ver el prototipo v3 →**](prototipo/index.html) · [Manual de identidad v11](docs/StyleRadar_Manual_de_Identidad.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
 
 </div>
 
 ---
 
-> **Estado:** Sprint 4 cerrado con el **prototipo navegable v3**. Cumple los 75 requerimientos funcionales del análisis y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
+> **Estado:** Sprint 2 cerrado con el **prototipo navegable v3**; el Sprint 3 está en curso y el Sprint 4 cierra el proyecto (ver el [plan](#sprint-3-y-sprint-4-plan-de-trabajo)). Cumple los 72 requerimientos funcionales del análisis, propone 3 nuevos (SR-RF-73 a 75) y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
 
 ## Tabla de contenido
 
@@ -26,20 +26,21 @@ El buscador de moda local con probador virtual.
 6. [Versión 3: cambios y respuesta a la revisión](#versión-3-cambios-y-respuesta-a-la-revisión)
 7. [Requerimientos](#requerimientos)
 8. [Sprint 2: checklist de frontend y flujos por rol](#sprint-2-checklist-de-frontend-y-flujos-por-rol)
-9. [Logotipo](#logotipo)
-10. [Manual de identidad](#manual-de-identidad)
-11. [Módulos](#módulos)
-12. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
+9. [Sprint 3 y Sprint 4: plan de trabajo](#sprint-3-y-sprint-4-plan-de-trabajo)
+10. [Logotipo](#logotipo)
+11. [Manual de identidad](#manual-de-identidad)
+12. [Módulos](#módulos)
+13. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
 
 ---
 
 ## Participantes
 
-| Integrante |
-|---|
+| Integrante           |
+|----------------------|
 | Juan Nicolás Álvarez |
-| Camilo Ortiz |
-| Daniel Valero |
+| Camilo Ortiz         |
+| Daniel Valero        |
 | Juan Diego Valderrama |
 | Paula Alejandra Diaz |
 
@@ -70,7 +71,7 @@ StyleRadar no es un marketplace: es el puente entre la intención de compra digi
 | **Usuario comprador** | Busca prendas, usa el probador virtual, arma playlists de estilo y publica ropa usada para vender o donar. |
 | **Almacén de moda** | Gestiona su catálogo, tallas, precios, disponibilidad, colecciones, fotos del local y suscripción. |
 | **Fundación aliada** | Recibe solicitudes de donación con punto y franja propuestos, y acepta, rechaza o confirma la recepción. |
-| **Administrador** | Modera publicaciones, verifica tiendas, gestiona fundaciones, usuarios y pagos, y consulta estadísticas. |
+| **Administrador** | Modera publicaciones, verifica tiendas y gestiona fundaciones, usuarios y pagos. |
 
 ### Idea diferenciadora: Playlists de estilo
 
@@ -81,20 +82,28 @@ Inspiradas en las listas de música, las playlists permiten crear y compartir co
 ## Estructura del repositorio
 
 ```
-styleradar-frontend/
+Frontend-Style-Radar/
 ├── prototipo/
 │   └── index.html                      Prototipo navegable v3 (un solo archivo, funciona sin internet)
 ├── docs/
-│   ├── StyleRadar_Manual_de_Identidad.html   Manual de identidad v3
+│   ├── StyleRadar_Manual_de_Identidad.html   Manual de identidad v11 (11 láminas)
 │   ├── StyleRadar_Informe_de_cambios_v3.docx Informe de cambios y respuesta a la revisión (parte 2)
 │   ├── StyleRadar_Presentacion.pdf           Presentación del Sprint 2
+│   ├── requerimientos/
+│   │   └── StyleRadar_Requerimientos_Completos_v3.xlsx   75 requerimientos funcionales
+│   ├── sprints/
+│   │   └── sprint-3-y-4.md                   Plan de trabajo de los sprints 3 y 4
 │   └── historico/
-│       └── StyleRadar_Manual_de_Identidad_v1.pdf
+│       ├── StyleRadar_Manual_de_Identidad_v1.pdf
+│       └── StyleRadar_Manual_de_Identidad_v3.html
 ├── assets/
 │   ├── logo/              Logotipo e isotipo en SVG
 │   ├── color/             Muestras de la paleta
+│   ├── mascota/           Los cinco amigos y sus poses en Bogotá
 │   ├── mockups/           Capturas del prototipo v3 (las que usa este README)
 │   └── mockups-sprint1/   Capturas de los mockups del Sprint 1
+├── .editorconfig
+├── .gitignore             Ignora .idea/, *.iml y node_modules/ para abrir el proyecto en IntelliJ
 └── README.md
 ```
 
@@ -122,6 +131,8 @@ El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cue
 | Sprint 1 | Mockups v1 | Identidad inicial, presentación, 12 módulos navegables para los cuatro actores y criterios de UX ([capturas](assets/mockups-sprint1)) |
 | Sprint 2 | Prototipo v2 | Respuesta a la revisión de mockups (parte 1) |
 | Sprint 2 | Prototipo v3 | Respuesta a la revisión (parte 2), análisis de requerimientos, manual de identidad v3 dentro de la plataforma, ajustes finales y [presentación del sprint](docs/StyleRadar_Presentacion.pdf) |
+| Sprint 3 | Corrección y base | 75 requerimientos, manual de identidad v10, mascota de los cinco amigos y reorganización del repositorio ([plan](#sprint-3-y-sprint-4-plan-de-trabajo)) |
+| Sprint 4 | Integración y cierre | Mascota y RF-73 a 75 dentro del prototipo, revisión final del frontend y entrega ([plan](#sprint-3-y-sprint-4-plan-de-trabajo)) |
 
 ### Sprint 1 · Mockups v1
 
@@ -139,7 +150,7 @@ El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cue
 - **Probador** en el inicio como vitrina estática; en la vista del probador, maniquí de mujer u hombre y **foto de ejemplo**.
 - **Segunda vida** con foto real, texto grande y acciones claras.
 - **Registro** con cuatro roles (el administrador entra con código de invitación) y selección visible con ✓, sin depender solo del color.
-- **Tienda física:** la tienda sube fotos de su local (SR-RF-75) y el usuario le escribe por chat (SR-RF-74) en lugar de llamar.
+- **Tienda física:** la tienda sube fotos de su local (SR-RF-74) y el usuario le escribe por chat (SR-RF-73) en lugar de llamar.
 - **Asistente para agregar prenda** con los atributos de búsqueda agrupados (color, marca, estilo, material, palabras clave).
 - Pie de página con enlaces que sí llevan a una sección.
 
@@ -202,7 +213,7 @@ Lo más importante de la v3:
 | Usuario (donar) | El punto de recogida lo pone quien dona | Al donar se elige cómo, día, franja y punto de entrega |
 | Administrador | Botones de editar y sin casillas | Botón **Editar** en cada fila, sin casillas |
 | Administrador | Quitar transacciones del usuario | Eliminadas del detalle del usuario |
-| Administrador | Quitar Invitar | Eliminado; queda **Exportar a Excel** |
+| Administrador | Quitar Invitar | Eliminado; queda la exportación de listados |
 
 </details>
 
@@ -231,23 +242,21 @@ Estos comentarios no se aplicaron porque el diseño actual responde a un requeri
 - **Accesorios:** salen de las categorías y colecciones, pero siguen en las playlists de estilo, porque un look no está completo sin ellos.
 - **Tienda:** las estadísticas se mantienen (sin apartados), porque son el argumento para pagar la suscripción; la tienda puede publicar accesorios (SR-RF-18 y 54); se mantienen los dos menús, porque el negro es la única navegación en celular.
 - **Fundación:** cuenta con Información, Estadísticas y Estado de la cuenta; menú con Mensajes (para cambios en una entrega ya aceptada, SR-RF-48) y Estadísticas.
-- **Administrador:** registros encontrados y columna Donaciones; destacar playlists por me gusta y guardados; estadísticas generales (SR-RF-73); sección de pagos (SR-RF-76); Exportar a Excel (SR-RF-77); categorías en Publicaciones; columna Prendas en Tiendas.
+- **Administrador:** registros encontrados y columna Donaciones; destacar playlists por me gusta y guardados; sección de pagos (SR-RF-75); categorías en Publicaciones; columna Prendas en Tiendas.
 - **Probador:** probar el look exacto de una playlist sobre el maniquí y el ajuste perfecto sobre la foto requieren un modelo de IA de *virtual try-on*; el prototipo muestra la etiqueta *Visualización aproximada*, como pide SR-RF-25.
 
 ---
 
 ## Requerimientos
 
-Los **72 requerimientos funcionales** del análisis son visibles en la v3. El informe incluye una tabla con cómo ver cada uno en el prototipo. Se proponen 5 nuevos porque la plataforma ya tiene esas funciones sin requerimiento que las respalde, y se ajustan los criterios de SR-RF-48:
+Los **72 requerimientos funcionales** del análisis son visibles en la v3. El informe incluye una tabla con cómo ver cada uno en el prototipo. Se proponen 3 nuevos porque la plataforma ya tiene esas funciones sin requerimiento que las respalde, y se ajustan los criterios de SR-RF-48:
 
 | Código | Cambio | Motivo |
 |---|---|---|
 | SR-RF-48 | Quien dona propone modo de entrega, día, franja y punto al enviar la solicitud; la fundación acepta o rechaza la propuesta completa. Si falta la franja o el punto, el formulario no se envía y marca el campo | La coordinación va en la solicitud, no en un paso aparte |
-| SR-RF-73 (nuevo) | Consultar estadísticas generales de la plataforma · Administrador | El administrador necesita ver la salud de la plataforma |
-| SR-RF-74 (nuevo) | Contactar a un almacén por chat · Usuario y almacén | Reemplaza «Llamar», pedido en la revisión 1 |
-| SR-RF-75 (nuevo) | Registrar fotografías de la tienda física (hasta 6; la primera es la portada) · Almacén | Pedido en la revisión 1 |
-| SR-RF-76 (nuevo) | Consultar pagos de suscripciones (aprobado, rechazado, pendiente o reembolsado) · Administrador | Soporta SR-RF-67 y 68 |
-| SR-RF-77 (nuevo) | Exportar listados a Excel (usuarios, tiendas y pagos con los filtros aplicados) · Administrador | Reportes y conciliación |
+| SR-RF-73 (nuevo) | Contactar a un almacén por chat · Usuario y almacén | Reemplaza «Llamar», pedido en la revisión 1 |
+| SR-RF-74 (nuevo) | Registrar fotografías de la tienda física (hasta 6; la primera es la portada) · Almacén | Pedido en la revisión 1 |
+| SR-RF-75 (nuevo) | Consultar pagos de suscripciones (aprobado, rechazado, pendiente o reembolsado) · Administrador | Soporta SR-RF-67 y 68 |
 
 ### Funciones que la revisión no encontraba
 
@@ -265,7 +274,7 @@ Los **72 requerimientos funcionales** del análisis son visibles en la v3. El in
 | Novedades semanales (SR-RF-20) | Página de cada tienda → Novedades de la semana |
 | Prendas de otros usuarios (SR-RF-36) | Inicio → Segunda vida → **Vendedores de la comunidad** |
 | Chat con vendedor (SR-RF-40, 41) | Prenda de segunda mano → **Escribir al vendedor** → Mensajes |
-| Fotos de la tienda física (SR-RF-75) | Tienda → Mi tienda → **Fotos de la tienda** |
+| Fotos de la tienda física (SR-RF-74) | Tienda → Mi tienda → **Fotos de la tienda** |
 
 ---
 
@@ -273,7 +282,7 @@ Los **72 requerimientos funcionales** del análisis son visibles en la v3. El in
 
 | Punto del sprint | Estado en la v3 | Dónde se ve |
 |---|---|---|
-| El prototipo cumple el análisis de requerimientos | Cumple: 72 de 72 RF visibles, más 5 propuestos (RF-73 a 77) | Sección [Requerimientos](#requerimientos) |
+| El prototipo cumple el análisis de requerimientos | Cumple: 72 de 72 RF visibles, más 3 propuestos (RF-73 a 75) | Sección [Requerimientos](#requerimientos) |
 | Manual de identidad: logo en 3 versiones, paleta con justificación UX, tipografía por tamaño | Cumple | [Manual de identidad](docs/StyleRadar_Manual_de_Identidad.html) y, en la plataforma, pie de página → **Manual de identidad** |
 | Un flujo funcional por cada actor | Cumple | Tabla de flujos por rol |
 | Happy path y flujo de error en cada pantalla | Cumple: los formularios validan con mensaje en rojo bajo el campo y aviso general | Registro, inicio de sesión, publicar, donar, agregar prenda, editar fundación |
@@ -287,6 +296,38 @@ Los **72 requerimientos funcionales** del análisis son visibles en la v3. El in
 | Administrador de almacén | Mi tienda → Agregar prenda (3 pasos) → en revisión → publicada → Estadísticas y Mensajes | Sin foto, sin atributos o con 0 unidades → no avanza de paso y marca el error |
 | Representante de fundación | Donaciones → Aceptar → Confirmar recepción | Rechazar sin motivo → «Elige un motivo»; fundación inactiva → no puede iniciar sesión |
 | Administrador StyleRadar | Estadísticas → Publicaciones (aprobar) → Tiendas (verificar) → Playlists (destacar) | NIT inválido o repetido al registrar fundación; rechazar sin motivo; más de 3 playlists destacadas |
+
+---
+
+## Sprint 3 y Sprint 4: plan de trabajo
+
+Las correcciones de requerimientos, identidad, mascota y documentación son mucho trabajo para un solo sprint, así que se reparten entre el **Sprint 3** (corregir y dejar la base) y el **Sprint 4** (integrar y cerrar). Marca: ✅ hecho · ⬜ pendiente.
+
+### Sprint 3 · Corrección y base
+
+| Estado | Entregable | Detalle |
+|---|---|---|
+| ✅ | Requerimientos actualizados | [Excel v3](docs/requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx): 75 RF (72 del análisis + SR-RF-73, 74 y 75), sin la pestaña de trazabilidad y con la hoja «Verificación RNF» |
+| ✅ | Manual de identidad v11 | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota rehecha. Ver [manual](docs/StyleRadar_Manual_de_Identidad.html) |
+| ✅ | Mascota: los amigos de StyleRadar | Cinco personajes (Antonia, Mateo, Aura, Nora y Tomás) con dos poses en Bogotá cada uno, en [`assets/mascota/`](assets/mascota). Reemplazan al camaleón Kai |
+| ✅ | README y estructura del repositorio | Se quitan los RF-76 y 77 que no se aprobaron, se documentan los 75 RF y se reorganiza la carpeta `docs/` para abrir el proyecto en IntelliJ |
+| ⬜ | Corrección en el prototipo: playlists | Limitar las playlists a **15 prendas** (hoy el límite no se aplica) |
+| ⬜ | Corrección en el prototipo: contraseñas | Unificar el mínimo de la contraseña (hoy el registro pide 4 y otra pantalla 6) |
+| ⬜ | Documentación del frontend | Informe de cambios v4 con las correcciones del Sprint 3 y la tabla «Cómo ver cada requerimiento» actualizada a 75 RF |
+
+### Sprint 4 · Integración y cierre
+
+| Estado | Entregable | Detalle |
+|---|---|---|
+| ⬜ | Mascota dentro del prototipo | Usar a los cinco amigos y sus poses en el registro, los estados vacíos, los mensajes de error y la página de «Cómo funciona» |
+| ⬜ | RF-73 · Chat con el almacén | Reemplaza «Llamar» en la ficha de la tienda; los chats sin responder se ven en el panel del almacén |
+| ⬜ | RF-74 · Fotos de la tienda física | Hasta 6 fotos por tienda; la primera es la portada |
+| ⬜ | RF-75 · Pagos de suscripciones | Listado para el administrador con estados aprobado, rechazado, pendiente y reembolsado |
+| ⬜ | Poses para el MVP | Recortar las poses con fondo transparente y descargarlas en tamaño completo desde Canva |
+| ⬜ | Revisión final del frontend | Recorrido de los flujos por rol, responsive a 390 y 1440 px, contraste, estados de error y vacíos |
+| ⬜ | Entrega final | Presentación del sprint, informe final y README actualizado |
+
+El detalle de este plan también está en [`docs/sprints/sprint-3-y-4.md`](docs/sprints/sprint-3-y-4.md).
 
 ---
 
@@ -309,9 +350,9 @@ Los archivos vectoriales están en [`assets/logo/`](assets/logo).
 
 ## Manual de identidad
 
-📄 **Manual de identidad v3:** [StyleRadar_Manual_de_Identidad.html](docs/StyleRadar_Manual_de_Identidad.html). Descárgalo y ábrelo en el navegador; es una presentación de 10 diapositivas. La versión del Sprint 1 está en [`docs/historico/`](docs/historico).
+📄 **Manual de identidad v11:** [StyleRadar_Manual_de_Identidad.html](docs/StyleRadar_Manual_de_Identidad.html). Descárgalo y ábrelo en el navegador; es una presentación de 11 diapositivas que incluye el diagrama de contexto. Las versiones anteriores están en [`docs/historico/`](docs/historico).
 
-El manual cubre el problema y los tres públicos, el logo en modo claro y oscuro, la paleta, la tipografía, las combinaciones accesibles, los botones, títulos e iconos, la mascota, las funcionalidades clave y las aplicaciones en computador y celular. Este es el resumen:
+El manual cubre el diagrama de contexto, el problema y los tres públicos, el logo en modo claro y oscuro, la paleta, la tipografía, las combinaciones accesibles, los botones, títulos e iconos, la mascota, las funcionalidades clave y las aplicaciones en computador y celular. Este es el resumen:
 
 ### Paleta de color · regla 60 · 30 · 10
 
@@ -345,9 +386,17 @@ Una sola familia: geométrica, amable y legible. Sus formas limpias reducen la s
 - **Principal:** violeta con texto blanco · **Secundario:** borde redondeado · **Terciario:** texto de apoyo con flecha.
 - **Iconos:** línea de 1,6 px con esquinas redondeadas, en versión clara y oscura.
 
-### Mascota: Kai
+### Mascota: los amigos de StyleRadar
 
-Kai es un camaleón moderno y versátil que cambia con tu estilo: representa la diversidad de la moda en la ciudad. Es curioso, elegante, cercano y versátil, y tiene expresiones para cada momento (look guardado, tienda cercana, nueva llegada, prenda favorita).
+La mascota es un grupo de cinco amigos de Bogotá. Cada uno viste a su modo y representa un estilo propio: juntos muestran la diversidad de la moda en la ciudad bajo la idea «misma ciudad, diferentes estilos, una misma frecuencia». Reemplaza al camaleón Kai de versiones anteriores.
+
+| Personaje | Estilo | Personalidad |
+|---|---|---|
+| Antonia | Sastre | Sofisticada, imponente y atemporal; de la oficina al plan |
+| Mateo | Calle | Oversize, comodidad y cultura local |
+| Aura | Futuro | Funcional, innovadora y de estética urbana |
+| Nora | Rebelde | Libertad, vintage y sin etiquetas |
+| Tomás | Esencial | Simple, de calidad y con equilibrio |
 
 ---
 
@@ -442,7 +491,7 @@ La fundación edita su página pública (misión, a quién ayuda, qué recibe y 
 ### 11. Administración
 **Actor:** administrador StyleRadar
 
-Barra lateral con estadísticas generales, usuarios, tiendas (verificación), fundaciones, publicaciones (moderación) y pagos. Cada fila tiene botón **Editar** y los listados se exportan a Excel.
+Barra lateral con resumen, usuarios, tiendas (verificación), fundaciones, publicaciones (moderación) y pagos. Cada fila tiene botón **Editar**.
 
 | Estadísticas | Tiendas |
 |---|---|
