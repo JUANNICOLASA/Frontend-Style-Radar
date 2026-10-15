@@ -14,7 +14,7 @@ El buscador de moda local con probador virtual.
 
 ---
 
-> **Estado:** Sprint 2 cerrado con el **prototipo navegable v3**. Cumple los 72 requerimientos funcionales del análisis, propone 5 nuevos (SR-RF-73 a 77) y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
+> **Estado:** Sprint 4 cerrado con el **prototipo navegable v3**. Cumple los 75 requerimientos funcionales del análisis y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
 
 ## Tabla de contenido
 
@@ -40,8 +40,8 @@ El buscador de moda local con probador virtual.
 | Juan Nicolás Álvarez |
 | Camilo Ortiz |
 | Daniel Valero |
-| Juan Diego Valder |
-| Paula Alejandra Diazrama |
+| Juan Diego Valderrama |
+| Paula Alejandra Diaz |
 
 Curso: **Desarrollo y Operaciones de Software (DOSW)** · Escuela Colombiana de Ingeniería Julio Garavito · 2026
 
