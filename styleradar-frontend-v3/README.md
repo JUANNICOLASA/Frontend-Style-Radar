@@ -14,7 +14,7 @@ El buscador de moda local con probador virtual.
 
 ---
 
-> **Estado:** Sprint 2 cerrado con el **prototipo navegable v3**; el Sprint 3 está en curso y el Sprint 4 cierra el proyecto (ver el [plan](#sprint-3-y-sprint-4-plan-de-trabajo)). Cumple los 72 requerimientos funcionales del análisis, propone 3 nuevos (SR-RF-73 a 75) y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
+> **Estado:** Sprint 2 cerrado con el **prototipo navegable v3**; el Sprint 3 y el Sprint 4 . Cumple los 75 requerimientos funcionales del análisis y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
 
 ## Tabla de contenido
 
@@ -126,13 +126,13 @@ El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cue
 
 ## Historial de sprints
 
-| Sprint | Entrega | Qué incluye |
-|---|---|---|
-| Sprint 1 | Mockups v1 | Identidad inicial, presentación, 12 módulos navegables para los cuatro actores y criterios de UX ([capturas](assets/mockups-sprint1)) |
-| Sprint 2 | Prototipo v2 | Respuesta a la revisión de mockups (parte 1) |
+| Sprint | Entrega | Qué incluye                                                                                                                                                                                |
+|---|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sprint 1 | Mockups v1 | Identidad inicial, presentación, 12 módulos navegables para los cuatro actores y criterios de UX ([capturas](assets/mockups-sprint1))                                                      |
+| Sprint 2 | Prototipo v2 | Respuesta a la revisión de mockups (parte 1)                                                                                                                                               |
 | Sprint 2 | Prototipo v3 | Respuesta a la revisión (parte 2), análisis de requerimientos, manual de identidad v3 dentro de la plataforma, ajustes finales y [presentación del sprint](docs/StyleRadar_Presentacion.pdf) |
-| Sprint 3 | Corrección y base | 75 requerimientos, manual de identidad v10, mascota de los cinco amigos y reorganización del repositorio ([plan](#sprint-3-y-sprint-4-plan-de-trabajo)) |
-| Sprint 4 | Integración y cierre | Mascota y RF-73 a 75 dentro del prototipo, revisión final del frontend y entrega ([plan](#sprint-3-y-sprint-4-plan-de-trabajo)) |
+| Sprint 3 | Corrección y base | 75 requerimientos, manual de identidad v3, mascota de los cinco amigos y reorganización del repositorio                                                                                    |
+| Sprint 4 | Integración y cierre | Mascota corregida y RF-73 a 75 dentro del prototipo, revisión frontend                                                                                                    |
 
 ### Sprint 1 · Mockups v1
 
@@ -165,10 +165,10 @@ La v3 aplica **46 cambios** pedidos en la revisión y justifica **19 comentarios
 Lo más importante de la v3:
 
 1. **Navegación sin callejones:** todas las pantallas internas tienen un botón **← Volver** junto a la ruta.
-2. **Consistencia visual:** todos los menús desplegables usan vidrio con ✓ en la opción elegida, todos los botones tienen las mismas esquinas (12 px) y los iconos son blancos.
+2. **Consistencia visual:** todos los menús desplegables  con ✓ en la opción elegida, todos los botones tienen las mismas esquinas (12 px) y los iconos son blancos.
 3. **Funciones donde se buscan:** el mapa con catálogo resumido y los vendedores de segunda mano pasan al inicio; recomendaciones y feed al perfil; prendas similares a la ficha de cada prenda.
 4. **Donación según SR-RF-48:** quien dona propone el punto y la franja; la fundación solo acepta, rechaza y confirma la recepción.
-5. **Manual de identidad dentro de la plataforma:** logo en 3 versiones, paleta con justificación y tipografía por tamaños (pie de página → *Manual de identidad*).
+5. **Manual de identidad dentro de la plataforma:** logo en 3 versiones, paleta con justificación y tipografía por tamaños.
 6. **Ajustes finales:** fondo de foto difuminada en todas las pantallas internas, fotos reales en todo el catálogo, mapa real de Bogotá con cada lugar en su barrio y transiciones suaves en tiendas y fundaciones.
 
 <details>
@@ -301,33 +301,31 @@ Los **72 requerimientos funcionales** del análisis son visibles en la v3. El in
 
 ## Sprint 3 y Sprint 4: plan de trabajo
 
-Las correcciones de requerimientos, identidad, mascota y documentación son mucho trabajo para un solo sprint, así que se reparten entre el **Sprint 3** (corregir y dejar la base) y el **Sprint 4** (integrar y cerrar). Marca: ✅ hecho · ⬜ pendiente.
+Las correcciones de requerimientos, identidad, mascota y documentación son mucho trabajo para un solo sprint, así que se reparten entre el **Sprint 3** (corregir y dejar la base) y el **Sprint 4** (integrar y cerrar).
 
 ### Sprint 3 · Corrección y base
 
-| Estado | Entregable | Detalle |
-|---|---|---|
-| ✅ | Requerimientos actualizados | [Excel v3](docs/requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx): 75 RF (72 del análisis + SR-RF-73, 74 y 75), sin la pestaña de trazabilidad y con la hoja «Verificación RNF» |
-| ✅ | Manual de identidad v11 | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota rehecha. Ver [manual](docs/StyleRadar_Manual_de_Identidad.html) |
-| ✅ | Mascota: los amigos de StyleRadar | Cinco personajes (Antonia, Mateo, Aura, Nora y Tomás) con dos poses en Bogotá cada uno, en [`assets/mascota/`](assets/mascota). Reemplazan al camaleón Kai |
-| ✅ | README y estructura del repositorio | Se quitan los RF-76 y 77 que no se aprobaron, se documentan los 75 RF y se reorganiza la carpeta `docs/` para abrir el proyecto en IntelliJ |
-| ⬜ | Corrección en el prototipo: playlists | Limitar las playlists a **15 prendas** (hoy el límite no se aplica) |
-| ⬜ | Corrección en el prototipo: contraseñas | Unificar el mínimo de la contraseña (hoy el registro pide 4 y otra pantalla 6) |
-| ⬜ | Documentación del frontend | Informe de cambios v4 con las correcciones del Sprint 3 y la tabla «Cómo ver cada requerimiento» actualizada a 75 RF |
+ | Entregable | Detalle                                                                                  |
+|-|------------------------------------------------------------------------------------------|
+ | Requerimientos actualizados | [Excel v3](docs/requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx): 75 RF (72 del análisis + SR-RF-73, 74 y 75) |
+| Manual de identidad v11 | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota nueva. Ver [manual](docs/StyleRadar_Manual_de_Identidad.html) |
+ | Mascota: los amigos de StyleRadar | Cinco personajes (Antonia, Mateo, Aura, Nora y Tomás) con dos poses en Bogotá cada uno, en [`assets/mascota/`](assets/mascota). |
+ | README y estructura del repositorio | Se quitan los RF-76 y 77 que no se aprobaron, se documentan los 75 RF y se reorganiza la carpeta `docs/` |
+ | Corrección en el prototipo: playlists | Limitar las playlists a **15 prendas**                                                   || Corrección en el prototipo: contraseñas | Unificar el mínimo de la contraseña (hoy el registro pide 4 y otra pantalla 6) |
+| Documentación del frontend | Informe de cambios v4 con las correcciones del Sprint 3 y la tabla actualizada a 75 RF   |
 
 ### Sprint 4 · Integración y cierre
 
-| Estado | Entregable | Detalle |
-|---|---|---|
-| ⬜ | Mascota dentro del prototipo | Usar a los cinco amigos y sus poses en el registro, los estados vacíos, los mensajes de error y la página de «Cómo funciona» |
-| ⬜ | RF-73 · Chat con el almacén | Reemplaza «Llamar» en la ficha de la tienda; los chats sin responder se ven en el panel del almacén |
-| ⬜ | RF-74 · Fotos de la tienda física | Hasta 6 fotos por tienda; la primera es la portada |
-| ⬜ | RF-75 · Pagos de suscripciones | Listado para el administrador con estados aprobado, rechazado, pendiente y reembolsado |
-| ⬜ | Poses para el MVP | Recortar las poses con fondo transparente y descargarlas en tamaño completo desde Canva |
-| ⬜ | Revisión final del frontend | Recorrido de los flujos por rol, responsive a 390 y 1440 px, contraste, estados de error y vacíos |
-| ⬜ | Entrega final | Presentación del sprint, informe final y README actualizado |
+| Entregable | Detalle |
+|-|---|
+| Mascota dentro del prototipo | Usar a los cinco amigos y sus poses en el registro, los estados vacíos, los mensajes de error|
+ | RF-73 · Chat con el almacén | Reemplaza «Llamar» en la ficha de la tienda; los chats sin responder se ven en el panel del almacén |
+ | RF-74 · Fotos de la tienda física | Hasta 6 fotos por tienda; la primera es la portada |
+| RF-75 · Pagos de suscripciones | Listado para el administrador con estados aprobado, rechazado, pendiente y reembolsado |
+| Poses para el MVP | Recortar las poses con fondo transparente y descargarlas en tamaño completo desde Canva |
+| Revisión final del frontend | Recorrido de los flujos por rol, responsive a 390 y 1440 px, contraste, estados de error y vacíos |
+| Entrega final | Presentación del sprint y README actualizado |
 
-El detalle de este plan también está en [`docs/sprints/sprint-3-y-4.md`](docs/sprints/sprint-3-y-4.md).
 
 ---
 
@@ -350,7 +348,7 @@ Los archivos vectoriales están en [`assets/logo/`](assets/logo).
 
 ## Manual de identidad
 
-📄 **Manual de identidad v11:** [StyleRadar_Manual_de_Identidad.html](docs/StyleRadar_Manual_de_Identidad.html). Descárgalo y ábrelo en el navegador; es una presentación de 11 diapositivas que incluye el diagrama de contexto. Las versiones anteriores están en [`docs/historico/`](docs/historico).
+**Manual de identidad v11:** [StyleRadar_Manual_de_Identidad.html](docs/StyleRadar_Manual_de_Identidad.html). Descárgalo y ábrelo en el navegador; es una presentación de 11 diapositivas que incluye el diagrama de contexto. Las versiones anteriores están en [`docs/historico/`](docs/historico).
 
 El manual cubre el diagrama de contexto, el problema y los tres públicos, el logo en modo claro y oscuro, la paleta, la tipografía, las combinaciones accesibles, los botones, títulos e iconos, la mascota, las funcionalidades clave y las aplicaciones en computador y celular. Este es el resumen:
 
