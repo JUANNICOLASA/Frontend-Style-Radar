@@ -1,6 +1,6 @@
 # Validación documental del Sprint 4
 
-Revisión final del 18 de octubre de 2026. Versión documental **1.1**. Rama: `docs/sprint4-arquitectura-frontend`, creada desde el `main` local en `0dfcee74f32c5420e8db345ace1d12cb56832d0d`. No se modificó main ni se realizaron commit, push, merge o Pull Request.
+Revisión final del 18 de octubre de 2026. Versión documental **1.1**. Rama: `docs/sprint4-arquitectura-frontend`, creada desde el `main` local en `0dfcee74f32c5420e8db345ace1d12cb56832d0d`. Esta evidencia describe la validación previa al commit y la publicación de la rama; main no se modificó durante esa validación.
 
 El paquete `StyleRadar_Sprint4_Archivos_para_Codex.zip` se incorporó inicialmente desde Descargas con sus 12 archivos y se comprobaron sus CRC y SHA-256. Esta revisión corrige el Word, regenera el PDF y repara la escala de los cinco SVG; esos siete archivos ya no deben compararse por igualdad binaria con el ZIP original. El ZIP y los archivos temporales de inspección permanecen fuera del repositorio.
 
@@ -49,8 +49,10 @@ Los cuatro enlaces externos del README se consultaron nuevamente mediante web el
 
 El SHA-256 de `prototipo/index.html` antes y después es **`5f932fc9141ba15316fcabc36a0b8a800843f7f1ab1464b93feb39fec81843f1`**, y su objeto Git coincide con HEAD. No se implementó React ni se añadieron dependencias, `package.json` o carpetas `src/`.
 
-Se ejecutaron `git status --short`, `git diff --check` y `git diff --stat`. La comprobación de espacios no detectó errores. El diff estadístico ordinario solo incluye archivos seguidos: README y plan de sprints; Word/PDF, diagramas y esta evidencia permanecen sin seguimiento como en la incorporación inicial. No se preparó el índice para commit.
+Durante la validación previa a la publicación se ejecutaron `git status --short`, `git diff --check` y `git diff --stat`. La comprobación de espacios no detectó errores. En ese momento, el diff estadístico ordinario solo incluía archivos seguidos: README y plan de sprints; Word/PDF, diagramas y esta evidencia permanecían sin seguimiento como en la incorporación inicial. Todavía no se había preparado el índice para commit.
 
-Los archivos `.idea/Frontend-Style-Radar.iml` y `.idea/modules.xml` permanecen sin seguimiento y fuera del alcance; no se editaron ni añadieron al índice. Main conserva `0dfcee74f32c5420e8db345ace1d12cb56832d0d`. La revisión termina sin commit, push ni Pull Request.
+Los archivos `.idea/Frontend-Style-Radar.iml` y `.idea/modules.xml` permanecen sin seguimiento y fuera del alcance; no se editaron ni añadieron al índice. Main conserva `0dfcee74f32c5420e8db345ace1d12cb56832d0d`.
+
+La validación documental se realizó antes del commit y la publicación de la rama. Posteriormente, los cambios se incorporaron al commit 2b713bb y se presentaron mediante el Pull Request #1 hacia main.
 
 Esta validación es documental. Continúan pendientes los recorridos funcionales completos, responsive/accesibilidad, las correcciones del plan y la integración real con Spring Boot.
