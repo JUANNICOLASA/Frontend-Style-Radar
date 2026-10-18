@@ -7,7 +7,7 @@ Las correcciones de requerimientos, identidad, mascota y documentación son much
 | Estado | Entregable | Detalle |
 |---|---|---|
 | ✅ | Requerimientos actualizados | [Excel v3](../requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx): 75 RF (72 del análisis + SR-RF-73, 74 y 75), sin la pestaña de trazabilidad y con la hoja «Verificación RNF» |
-| ✅ | Manual de identidad v11 | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota rehecha. Ver [manual](../StyleRadar_Manual_de_Identidad.html) |
+| ✅ | Manual de identidad (entrega previa) | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota rehecha. Ver [archivo vigente](../StyleRadar_Manual_de_Identidadv2.html) |
 | ✅ | Mascota: los amigos de StyleRadar | Cinco personajes (Antonia, Mateo, Aura, Nora y Tomás) con dos poses en Bogotá cada uno, en [`assets/mascota/`](../../assets/mascota). Reemplazan al camaleón Kai |
 | ✅ | README y estructura del repositorio | Se quitan los RF-76 y 77 que no se aprobaron, se documentan los 75 RF y se reorganiza la carpeta `docs/` para abrir el proyecto en IntelliJ |
 | ⬜ | Corrección en el prototipo: playlists | Limitar las playlists a **15 prendas** (hoy el límite no se aplica) |
@@ -18,6 +18,10 @@ Las correcciones de requerimientos, identidad, mascota y documentación son much
 
 | Estado | Entregable | Detalle |
 |---|---|---|
+| ✅ | Documento de arquitectura agregado | Revisión documental final 1.1: [PDF de consulta](../arquitectura/StyleRadar_Arquitectura_Frontend_Con_Diagramas.pdf) regenerado desde el [Word editable](../arquitectura/StyleRadar_Arquitectura_Frontend_Con_Diagramas.docx); propuesta nivel 3 alineada con README, HTML y RF, sin implementar React |
+| ✅ | Diagramas de navegación agregados | Cinco recorridos por invitado, comprador, almacén, fundación y administrador; PNG y SVG en [docs/flujo/](../flujo) |
+| ✅ | README actualizado para arquitectura | Índice, módulos propuestos, navegación por rol, pantallas, errores, prototipo oficial e integración futura; se preserva el contenido anterior |
+| ✅ | Enlaces y archivos locales verificados | Imágenes, rutas Markdown, anclas, manual y prototipo; alcance y resultados en [validación documental](validacion-documental-sprint4.md). No equivale a validación funcional del prototipo |
 | ⬜ | Mascota dentro del prototipo | Usar a los cinco amigos y sus poses en el registro, los estados vacíos, los mensajes de error y la página de «Cómo funciona» |
 | ⬜ | RF-73 · Chat con el almacén | Reemplaza «Llamar» en la ficha de la tienda; los chats sin responder se ven en el panel del almacén |
 | ⬜ | RF-74 · Fotos de la tienda física | Hasta 6 fotos por tienda; la primera es la portada |

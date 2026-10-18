@@ -8,13 +8,13 @@
 
 El buscador de moda local con probador virtual.
 
-[**Ver el prototipo v3 →**](prototipo/index.html) · [Manual de identidad v11](docs/StyleRadar_Manual_de_Identidad.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
+[**Ver el prototipo v3 →**](prototipo/index.html) · [Manual de identidad](docs/StyleRadar_Manual_de_Identidadv2.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
 
 </div>
 
 ---
 
-> **Estado:** Sprint 2 cerrado con el **prototipo navegable v3**; el Sprint 3 y el Sprint 4 . Cumple los 75 requerimientos funcionales del análisis y responde las dos rondas de revisión de mockups. El prototipo es solo frontend: no tiene backend y guarda los datos de prueba en el navegador.
+> **Estado:** se conserva el **prototipo navegable v3** de las entregas anteriores. Sprint 4 incorpora documentación de arquitectura y navegación; React e integración con backend siguen propuestos. El HTML simula flujos y guarda datos de prueba en el navegador. La cobertura de los 75 RF y las validaciones funcionales descritas en el historial requieren el cierre de los pendientes del [plan de sprints](docs/sprints/sprint-3-y-4.md).
 
 ## Tabla de contenido
 
@@ -27,10 +27,19 @@ El buscador de moda local con probador virtual.
 7. [Requerimientos](#requerimientos)
 8. [Sprint 2: checklist de frontend y flujos por rol](#sprint-2-checklist-de-frontend-y-flujos-por-rol)
 9. [Sprint 3 y Sprint 4: plan de trabajo](#sprint-3-y-sprint-4-plan-de-trabajo)
-10. [Logotipo](#logotipo)
-11. [Manual de identidad](#manual-de-identidad)
-12. [Módulos](#módulos)
-13. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
+10. [Arquitectura frontend Sprint 4](#arquitectura-frontend-sprint-4)
+11. [Arquitectura de paquetes nivel 3](#arquitectura-de-paquetes-nivel-3)
+12. [Diagramas de navegación por rol](#diagramas-de-navegación-por-rol)
+13. [Documento completo de arquitectura](#documento-completo-de-arquitectura)
+14. [Prototipo navegable](#prototipo-navegable)
+15. [Pantallas y accesos por rol](#pantallas-y-accesos-por-rol)
+16. [Flujos exitosos y de error](#flujos-exitosos-y-de-error)
+17. [Tecnologías propuestas e integración futura con el backend Spring Boot](#tecnologías-propuestas-e-integración-futura-con-el-backend-spring-boot)
+18. [Estado real del Sprint 4](#estado-real-del-sprint-4)
+19. [Logotipo](#logotipo)
+20. [Manual de identidad](#manual-de-identidad)
+21. [Módulos](#módulos)
+22. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
 
 ---
 
@@ -82,17 +91,20 @@ Inspiradas en las listas de música, las playlists permiten crear y compartir co
 ## Estructura del repositorio
 
 ```
-Frontend-Style-Radar/
+styleradar-frontend-v3/
 ├── prototipo/
 │   └── index.html                      Prototipo navegable v3 (un solo archivo, funciona sin internet)
 ├── docs/
-│   ├── StyleRadar_Manual_de_Identidad.html   Manual de identidad v11 (11 láminas)
+│   ├── StyleRadar_Manual_de_Identidadv2.html Manual de identidad vigente
+│   ├── arquitectura/                       Arquitectura: PDF de consulta y Word editable
+│   ├── flujo/                              Cinco diagramas por rol: PNG y SVG
 │   ├── StyleRadar_Informe_de_cambios_v3.docx Informe de cambios y respuesta a la revisión (parte 2)
 │   ├── StyleRadar_Presentacion.pdf           Presentación del Sprint 2
 │   ├── requerimientos/
 │   │   └── StyleRadar_Requerimientos_Completos_v3.xlsx   75 requerimientos funcionales
 │   ├── sprints/
-│   │   └── sprint-3-y-4.md                   Plan de trabajo de los sprints 3 y 4
+│   │   ├── sprint-3-y-4.md                   Plan de trabajo de los sprints 3 y 4
+│   │   └── validacion-documental-sprint4.md  Evidencia y límites de esta entrega documental
 │   └── historico/
 │       ├── StyleRadar_Manual_de_Identidad_v1.pdf
 │       └── StyleRadar_Manual_de_Identidad_v3.html
@@ -132,7 +144,7 @@ El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cue
 | Sprint 2 | Prototipo v2 | Respuesta a la revisión de mockups (parte 1)                                                                                                                                               |
 | Sprint 2 | Prototipo v3 | Respuesta a la revisión (parte 2), análisis de requerimientos, manual de identidad v3 dentro de la plataforma, ajustes finales y [presentación del sprint](docs/StyleRadar_Presentacion.pdf) |
 | Sprint 3 | Corrección y base | 75 requerimientos, manual de identidad v3, mascota de los cinco amigos y reorganización del repositorio                                                                                    |
-| Sprint 4 | Integración y cierre | Mascota corregida y RF-73 a 75 dentro del prototipo, revisión frontend                                                                                                    |
+| Sprint 4 | Documentación de arquitectura | Documento Word/PDF, cinco diagramas por rol y README; integración, correcciones y revisión funcional pendientes según el plan |
 
 ### Sprint 1 · Mockups v1
 
@@ -280,10 +292,12 @@ Los **72 requerimientos funcionales** del análisis son visibles en la v3. El in
 
 ## Sprint 2: checklist de frontend y flujos por rol
 
+Esta sección conserva el reporte histórico del Sprint 2. Sus estados «Cumple» no constituyen una nueva validación del Sprint 4; prevalecen los pendientes del [plan de trabajo](docs/sprints/sprint-3-y-4.md).
+
 | Punto del sprint | Estado en la v3 | Dónde se ve |
 |---|---|---|
 | El prototipo cumple el análisis de requerimientos | Cumple: 72 de 72 RF visibles, más 3 propuestos (RF-73 a 75) | Sección [Requerimientos](#requerimientos) |
-| Manual de identidad: logo en 3 versiones, paleta con justificación UX, tipografía por tamaño | Cumple | [Manual de identidad](docs/StyleRadar_Manual_de_Identidad.html) y, en la plataforma, pie de página → **Manual de identidad** |
+| Manual de identidad: logo en 3 versiones, paleta con justificación UX, tipografía por tamaño | Cumple | [Manual de identidad](docs/StyleRadar_Manual_de_Identidadv2.html) y, en la plataforma, pie de página → **Manual de identidad** |
 | Un flujo funcional por cada actor | Cumple | Tabla de flujos por rol |
 | Happy path y flujo de error en cada pantalla | Cumple: los formularios validan con mensaje en rojo bajo el campo y aviso general | Registro, inicio de sesión, publicar, donar, agregar prenda, editar fundación |
 | Responsive en móvil y desktop | Cumple: probado a 390 px y 1440 px sin scroll horizontal | Menú ☰ en celular, tarjetas en una columna |
@@ -308,10 +322,11 @@ Las correcciones de requerimientos, identidad, mascota y documentación son much
  | Entregable | Detalle                                                                                  |
 |-|------------------------------------------------------------------------------------------|
  | Requerimientos actualizados | [Excel v3](docs/requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx): 75 RF (72 del análisis + SR-RF-73, 74 y 75) |
-| Manual de identidad v11 | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota nueva. Ver [manual](docs/StyleRadar_Manual_de_Identidad.html) |
+| Manual de identidad (entrega previa) | 11 láminas: nueva lámina 3 con el **diagrama de contexto**, fondos nuevos, bloque de botones corregido y mascota nueva. Ver [manual vigente](docs/StyleRadar_Manual_de_Identidadv2.html) |
  | Mascota: los amigos de StyleRadar | Cinco personajes (Antonia, Mateo, Aura, Nora y Tomás) con dos poses en Bogotá cada uno, en [`assets/mascota/`](assets/mascota). |
  | README y estructura del repositorio | Se quitan los RF-76 y 77 que no se aprobaron, se documentan los 75 RF y se reorganiza la carpeta `docs/` |
- | Corrección en el prototipo: playlists | Limitar las playlists a **15 prendas**                                                   || Corrección en el prototipo: contraseñas | Unificar el mínimo de la contraseña (hoy el registro pide 4 y otra pantalla 6) |
+ | Corrección en el prototipo: playlists | Limitar las playlists a **15 prendas** |
+ | Corrección en el prototipo: contraseñas | Unificar el mínimo de la contraseña (hoy el registro pide 4 y otra pantalla 6) |
 | Documentación del frontend | Informe de cambios v4 con las correcciones del Sprint 3 y la tabla actualizada a 75 RF   |
 
 ### Sprint 4 · Integración y cierre
@@ -326,6 +341,205 @@ Las correcciones de requerimientos, identidad, mascota y documentación son much
 | Revisión final del frontend | Recorrido de los flujos por rol, responsive a 390 y 1440 px, contraste, estados de error y vacíos |
 | Entrega final | Presentación del sprint y README actualizado |
 
+
+---
+
+## Arquitectura frontend Sprint 4
+
+El entregable documental, **versión 1.1**, describe una **arquitectura propuesta de nivel 3: agrupación por funcionalidades/módulos**, según la organización indicada por el profesor. Cada módulo reúne la presentación, las interacciones y el acceso a datos de su dominio. La aplicación React y su conexión REST aún no están implementadas: el artefacto ejecutable existente es el HTML simulado.
+
+La identidad sigue el [manual existente](docs/StyleRadar_Manual_de_Identidadv2.html): violeta `#48119A`, grafito `#262626`, blanco `#FFFFFF`, arena `#E8DCCB`, lavanda `#B9B9CA` y tipografía **Poppins**. Antonia, Mateo, Aura, Nora y Tomás son los cinco personajes de la marca.
+
+## Arquitectura de paquetes nivel 3
+
+Esta estructura es una **propuesta para la futura aplicación React**. El árbol sirve como diseño documental; no se han creado `src/`, componentes ni dependencias.
+
+```text
+modules/
+├── core/
+├── auth/
+├── discovery/
+├── catalogo/
+├── almacenes/
+├── probador/
+├── playlists/
+├── alertas/
+├── preferencias/
+├── suscripciones/
+├── segunda-vida/
+├── mensajes/
+├── fundaciones/
+└── administracion/
+```
+
+| Módulo propuesto | Responsabilidad y componentes previstos | Hooks, servicios y estado previstos |
+|---|---|---|
+| `modules/core/` | Layout, navegación, botones, formularios accesibles, diálogos y estados compartidos; configuración y diseño visual | Cliente HTTP común, utilidades de fechas/precios, normalización de errores y hooks comunes. No almacena reglas del negocio ni importa módulos de dominio |
+| `modules/auth/` | Inicio de sesión, registro y acceso por rol | Hooks de autenticación; servicio de identidad; estado compartido mínimo de sesión, identidad y permisos |
+| `modules/discovery/` | Portada, categorías y accesos a catálogo, tiendas, fundaciones y playlists | Hooks de composición; consume interfaces públicas de los módulos, sin duplicar inventario ni recomendaciones |
+| `modules/catalogo/` | Búsqueda, filtros, resultados y ficha de prenda; acceso al módulo probador | Hooks de búsqueda y selección; servicios de catálogo; filtros en URL y estado local de resultados/selección |
+| `modules/almacenes/` | Mapa, ficha pública y panel de tienda; inventario y fotos del local | Hooks de mapa e inventario; servicios de almacenes; estado de tienda seleccionada y borradores de edición |
+| `modules/probador/` | Maniquí, selección de prendas, foto y visualización aproximada | Hooks de selección y foto; estado temporal del look y eliminación de imagen; integración de IA no acreditada |
+| `modules/playlists/` | Listas, detalle y editor de playlists; colecciones del almacén | Hooks de edición; servicios de playlists; selección de prendas y visibilidad; validación del límite de 15 |
+| `modules/alertas/` | Búsquedas guardadas y avisos de disponibilidad | Hooks de alertas; servicios de consulta/activación; estado de filtros guardados y notificaciones |
+| `modules/preferencias/` | Perfil del comprador, estilos, tallas, wishlist y recomendaciones | Hooks de preferencias; servicios del perfil; borradores locales y preferencias confirmadas de la sesión |
+| `modules/suscripciones/` | Planes y renovación del almacén; composición de la pantalla de planes de la cuenta | Hooks de consulta/cancelación; servicios de suscripción; plan y estado de renovación. Administración compone la consulta de pagos mediante su interfaz pública. La contratación de planes del comprador y su soporte REST requieren confirmación |
+| `modules/segunda-vida/` | Publicar para vender o donar, publicaciones propias y propuesta de entrega | Hooks de publicación/donación; servicios de publicaciones; borrador, fotos y propuesta de entrega; consume la interfaz de mensajes |
+| `modules/mensajes/` | Bandeja y conversaciones de compradores, tiendas y fundaciones | Hooks de conversación; servicios de mensajería; conversación seleccionada y borrador, sin duplicarlos en cada módulo consumidor |
+| `modules/fundaciones/` | Ficha pública, edición de la fundación y solicitudes de donación | Hooks de solicitudes; servicios de fundaciones/donaciones; filtros y transiciones de aceptar, rechazar y recibir |
+| `modules/administracion/` | Resumen, usuarios, verificación de tiendas, fundaciones, moderación, playlists y pagos | Hooks de gestión; servicios administrativos; filtros, selección y confirmaciones; autorización `ADMIN_STYLERADAR` |
+
+Dentro de cada módulo se proponen `pages/` para pantallas, `components/` para elementos propios, `hooks/` para coordinar interacción y datos, `services/` para REST y adaptación de DTO, `states/` para estado compartido necesario, `models/` para contratos y `utils/` para funciones puras del dominio. Solo se crearían al implementar una necesidad concreta.
+
+Los componentes presentan datos y eventos; los hooks coordinan servicios y estados `loading/error/empty/success`. Los formularios conservan su borrador local; la sesión se comparte desde auth y los resultados remotos se gestionan en su módulo, evitando duplicarlos en un estado global. Core aporta elementos reutilizables sin depender de funcionalidades. Los módulos colaboran mediante interfaces públicas, sin importar archivos internos de otros módulos ni acceder a la base de datos.
+
+La misma distribución figura en el Word/PDF 1.1, secciones 4.2 y 4.5. `perfil` y `panel-almacen` del diseño previo se conservan como agrupaciones funcionales internas de `preferencias` y `almacenes`; sus recorridos permanecen en las secciones 8.5 y 8.11. `suscripciones` reúne planes y renovación. Catálogo y playlists abren el probador mediante su interfaz pública; segunda vida, almacenes y fundaciones consumen mensajes. Core es soporte técnico transversal, sin reglas de negocio propias.
+
+Los tres módulos adicionales se justifican por funciones reales del HTML. Esta correspondencia describe responsabilidades propuestas y no certifica implementación React ni ejecución completa de los RF:
+
+| Módulo adicional | Referencia en el HTML real | Justificación funcional y requerimientos |
+|---|---|---|
+| `discovery` | `#inicio`, categorías y accesos a tiendas, fundaciones y playlists | Compone el descubrimiento de SR-RF-07 a 22, SR-RF-43 y SR-RF-69 a 72; reutiliza datos de otros módulos, sin inventar un RF nuevo |
+| `probador` | `#/probador` | Selección de prendas, carga y eliminación de foto, visualización aproximada: SR-RF-23 a 27 |
+| `mensajes` | `#/mensajes` | Chat con vendedor, coordinación de entrega/donación y contacto con almacén: SR-RF-40/41, SR-RF-48 y SR-RF-73 |
+
+El resto de la agrupación se cotejó con el [Excel de 75 RF](docs/requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx): auth (01/02), preferencias (03 a 06; wishlist y cuenta visibles en el HTML), catálogo (07 a 16 y 22), almacenes (17 a 22, 50 a 60 y 74), alertas (28 a 32), segunda vida (33 a 39, 42 a 45 y coordinación 48), fundaciones (43 a 49), suscripciones de almacén (67/68), playlists (69 a 71) y administración (61 a 66, 72 y 75). La consulta administrativa de pagos mantiene sus permisos propios. Los planes del comprador son una pantalla del prototipo, sin atribuirlos a los RF de suscripción de almacenes.
+
+## Diagramas de navegación por rol
+
+Los cinco PNG recibidos se incluyen a continuación; cada SVG permite ampliar el diagrama sin perder resolución. La revisión final corrigió una escala duplicada en los cinco SVG que recortaba el dibujo; se conservan todos sus nodos, textos y flechas. **Invitado es una condición de acceso sin sesión, no un rol autenticado del backend.** Los nombres de roles autenticados son `COMPRADOR`, `ADMIN_ALMACEN`, `REPRESENTANTE_FUNDACION` y `ADMIN_STYLERADAR`.
+
+Los diagramas describen navegación y diseño de errores. Las referencias a 400/401/403/404/409, expiración JWT y trazabilidad persistente corresponden a la integración futura, no a llamadas reales del HTML. La lectura está contrastada con las rutas y validaciones declaradas en el prototipo; no certifica una prueba completa de cada operación.
+
+### 1. Invitado
+
+![Navegación invitado](docs/flujo/01_invitado.png)
+
+[SVG de alta resolución: invitado](docs/flujo/01_invitado.svg).
+
+- **Acceso y recorrido:** sin sesión → portada/inicio → categorías y catálogo, tiendas/mapa o segunda vida/fundaciones → consultar detalle → iniciar sesión o crear cuenta al requerir una acción personal.
+- **Acciones restringidas:** guardar wishlist o playlists, probar prendas, contactar, publicar y donar requieren sesión; el HTML abre el formulario de acceso.
+- **Error:** credenciales inválidas mantienen el formulario con un mensaje de corrección; una búsqueda sin coincidencias muestra un estado vacío. El 401 del diagrama representa la respuesta prevista de la futura API.
+- **Pantallas reales:** Portada, Inicio de sesión, Crear cuenta, Catálogo, Mapa, Tienda, Fundación y Playlist; capturas en los [módulos existentes](#módulos).
+- **RF verificables:** SR-RF-01/02 (registro/acceso), SR-RF-07 a 22 (búsqueda, mapa y catálogo). La consulta pública actual es una decisión del prototipo; sus permisos REST deberán confirmarse.
+
+### 2. COMPRADOR
+
+![Navegación comprador](docs/flujo/02_comprador.png)
+
+[SVG de alta resolución: comprador](docs/flujo/02_comprador.svg).
+
+- **Recorrido:** inicio/perfil → buscar y filtrar → ficha de prenda → probador aproximado, wishlist/playlist o mensajes a la tienda. Segunda vida permite publicar para vender o donar proponiendo modalidad, día, franja y punto.
+- **Acciones restringidas:** administra sus propios datos y publicaciones; no accede al panel de almacén, solicitudes de una fundación ni administración de la plataforma. Vender y donar son acciones del comprador, no roles adicionales.
+- **Error:** sin coincidencias, ajustar filtros o guardar búsqueda; un formulario incompleto marca campos. La sesión vencida del diagrama es un caso del futuro cliente JWT.
+- **Pantallas reales:** Catálogo, ficha de prenda en diálogo, Probador, Playlist, Perfil, Publicar una prenda y Mensajes; [capturas del prototipo](#módulos).
+- **RF verificables:** SR-RF-07 a 16 (búsqueda), SR-RF-23 a 26 (probador), SR-RF-45/48 (donación), SR-RF-69 a 71 (playlists) y SR-RF-73 (chat con almacén).
+
+### 3. ADMIN_ALMACEN
+
+![Navegación administrador de almacén](docs/flujo/03_almacen.png)
+
+[SVG de alta resolución: almacén](docs/flujo/03_almacen.svg).
+
+- **Recorrido:** ingreso → Mi tienda → catálogo y colecciones → agregar prenda en tres pasos → enviar a revisión; consultar inventario, fotos del local, estadísticas, mensajes y suscripción.
+- **Acciones restringidas:** gestiona su propio almacén; aprobar publicaciones y verificar tiendas corresponde a `ADMIN_STYLERADAR`. No gestiona donaciones de fundaciones ni inventario ajeno.
+- **Error:** faltan fotos, atributos o stock → el asistente marca errores; una publicación rechazada requiere consultar el motivo. El conflicto 409/permisos de suscripción es diseño de integración futura.
+- **Pantallas reales:** Mi tienda, asistente de prenda, Mi cuenta → Estadísticas/Suscripción y Mensajes; [panel de tienda](#9-panel-de-la-tienda).
+- **RF verificables:** SR-RF-50 a 60 (inventario), SR-RF-67/68 (suscripción), SR-RF-73 (mensajes) y SR-RF-74 (hasta seis fotos del local). Su validación funcional final continúa pendiente en el plan.
+
+### 4. REPRESENTANTE_FUNDACION
+
+![Navegación representante de fundación](docs/flujo/04_fundacion.png)
+
+[SVG de alta resolución: fundación](docs/flujo/04_fundacion.svg).
+
+- **Recorrido:** ingreso con fundación activa → Mi fundación → editar perfil público o consultar solicitudes → revisar prenda y propuesta de entrega → aceptar o rechazar con motivo → confirmar recepción si fue aceptada y entregada.
+- **Acciones restringidas:** opera sobre su fundación y sus donaciones; no define la propuesta inicial del donante ni administra almacenes, usuarios o moderación global.
+- **Error:** fundación inactiva → acceso denegado; sin solicitudes → estado vacío; rechazo sin motivo → pedir corrección antes de confirmar.
+- **Pantallas reales:** Mi fundación, Donaciones y Mi cuenta (información, estadísticas y estado); Mensajes permite coordinar una entrega aceptada. Véase el [panel de fundación](#10-panel-de-la-fundación).
+- **RF verificables:** SR-RF-46 a 49 (consulta, decisión, coordinación y recepción). El rol backend es `REPRESENTANTE_FUNDACION`, aunque el diagrama abrevia «Fundación».
+
+### 5. ADMIN_STYLERADAR
+
+![Navegación administrador StyleRadar](docs/flujo/05_administrador.png)
+
+[SVG de alta resolución: administrador](docs/flujo/05_administrador.svg).
+
+- **Recorrido:** ingreso → resumen → usuarios, tiendas, fundaciones, publicaciones, playlists o pagos → revisar y confirmar una decisión → visualizar el estado actualizado en la simulación.
+- **Acciones restringidas:** los demás roles no acceden a estas vistas. Ser administrador no implica acceso automático a las rutas privadas de otro rol ni permite saltar validaciones de cada operación.
+- **Error:** datos inválidos, NIT repetido o ausencia de motivo impiden confirmar; 403 y 404 representan denegación o recurso ausente en la API futura. La selección de playlists destacadas y su soporte REST quedan pendientes de contrastar.
+- **Pantallas reales:** Administración → Estadísticas, Usuarios, Tiendas, Fundaciones, Publicaciones, Playlists, Pagos y Mi cuenta; [capturas de administración](#11-administración).
+- **RF verificables:** SR-RF-61 a 66 (moderación y gestión), SR-RF-72 (destacar playlists) y SR-RF-75 (consulta de pagos). La trazabilidad persistente del diagrama no está implementada en este frontend.
+
+La numeración anterior procede del [Excel de requerimientos](docs/requerimientos/StyleRadar_Requerimientos_Completos_v3.xlsx). No se asignan códigos HU porque no se dispone aquí de una matriz de historias verificable.
+
+## Documento completo de arquitectura
+
+- [PDF — versión 1.1 de consulta](docs/arquitectura/StyleRadar_Arquitectura_Frontend_Con_Diagramas.pdf).
+- [Word — versión 1.1 editable](docs/arquitectura/StyleRadar_Arquitectura_Frontend_Con_Diagramas.docx).
+
+La revisión documental final unifica **1.1** en portada, control, encabezados, pies, metadatos e historial del Word. El PDF se regenera desde ese Word corregido. Se conservan el contenido y las nueve imágenes internas, incluidos los cinco diagramas de navegación. Ambos documentan la propuesta, los recorridos, la integración prevista y sus limitaciones; no acreditan una aplicación React ya implementada. El historial registra los ajustes del 18 de octubre de 2026 y conserva la aclaración sobre el prototipo HTML real.
+
+## Prototipo navegable
+
+El prototipo oficial es [`prototipo/index.html`](prototipo/index.html), un **HTML navegable que simula los flujos de la aplicación**. StyleRadar no tiene un prototipo existente en Figma. Se abre localmente siguiendo [Cómo ver el prototipo](#cómo-ver-el-prototipo); las cuentas allí indicadas son exclusivamente datos de demostración del HTML.
+
+No consume el backend Spring Boot ni autentica con JWT real. No se ha comprobado una URL de despliegue público. El archivo HTML se conserva sin modificaciones en esta entrega.
+
+## Pantallas y accesos por rol
+
+Esta matriz refleja el enrutador y las restricciones declaradas del HTML. Las rutas hash son referencias internas del prototipo; no son endpoints REST ni rutas React implementadas.
+
+| Acceso | Nombre interno del HTML | Pantallas y rutas existentes | Restricción principal |
+|---|---|---|---|
+| Invitado (sin sesión) | `guest` | Inicio `#inicio`, Catálogo `#/catalogo`, Mapa `#/mapa`, Tienda `#/tienda/:id`, Fundación `#/fundacion/:id`, Playlist `#/playlist/:id`, Vendedor `#/vendedor/:id` | Consulta pública; acciones personales abren login |
+| `COMPRADOR` | `user` | Vistas públicas, Perfil `#/perfil`, Probador `#/probador`, Publicar `#/vender`, Mensajes `#/mensajes` | Perfil/publicaciones propios; sin paneles administrativos |
+| `ADMIN_ALMACEN` | `store` | Mi tienda `#/mi-tienda`, sus colecciones/playlists, Mi cuenta `#/cuenta`, Mensajes `#/mensajes` | Gestión de su almacén; sin moderación global |
+| `REPRESENTANTE_FUNDACION` | `found` | Mi fundación `#/mi-fundacion`, Donaciones `#/donaciones`, Mi cuenta `#/cuenta`, Mensajes `#/mensajes` | Solo su fundación y solicitudes asignadas |
+| `ADMIN_STYLERADAR` | `admin` | `#/admin/resumen`, `usuarios`, `tiendas`, `fundaciones`, `publicaciones`, `playlists`, `pagos`, `cuenta` bajo `#/admin/` | Vistas reservadas al administrador de plataforma |
+
+El manual dentro de la plataforma (`#/marca`) está declarado para todos los tipos de acceso. Los identificadores `:id` representan recursos existentes de la simulación; se muestran como texto para no enlazar recursos ficticios. Las capturas reales se conservan en [Módulos](#módulos). Los controles del navegador sirven a la experiencia de acceso; la futura autorización efectiva debe aplicarse también en Spring Boot.
+
+## Flujos exitosos y de error
+
+Los [cinco diagramas](#diagramas-de-navegación-por-rol) explican el recorrido principal, la alternativa y la restricción de cada actor. Estos son los puntos de comprobación para la futura revisión funcional; esta entrega solo verifica documentación y archivos.
+
+| Flujo | Resultado esperado | Alternativa/error a comprobar |
+|---|---|---|
+| Acceso | Credenciales de prueba válidas → inicio del tipo de cuenta | Datos inválidos → mensaje; invitado intenta acción personal → login; rol incorrecto → aviso y retorno a su inicio |
+| Descubrimiento | Búsqueda → resultados → ficha → guardar/probar/contactar con sesión | Cero coincidencias → estado vacío y ajuste de filtros; foto inválida → corregir o usar ejemplo |
+| Publicar/donar | Datos válidos y propuesta completa → publicación o solicitud simulada | Falta foto, punto o franja → marcar campo y conservar datos para corregir |
+| Inventario | Asistente de tres pasos → revisión → decisión de moderación | Fotos, atributos o unidades inválidos → impedir avance y explicar corrección |
+| Donaciones | Aceptar propuesta → entrega → confirmar recepción | Sin solicitudes → vacío; rechazo sin motivo → validación; fundación inactiva → denegación |
+| Administración | Revisar detalle → confirmar → estado actualizado | NIT inválido/repetido, rechazo sin motivo o límite de destacadas → corrección; errores REST quedan para integración |
+
+El límite de 15 prendas y la unificación de contraseña siguen pendientes en el plan. Las afirmaciones históricas de cumplimiento del Sprint 2 se conservan como antecedentes y no cierran estas verificaciones.
+
+## Tecnologías propuestas e integración futura con el backend Spring Boot
+
+Se propone **React + Vite**, **React Router**, **Axios**, **API REST Spring Boot** y autenticación **JWT Bearer**. No se instalan en esta entrega. Los contratos, nombres de campos, rutas y operaciones disponibles deberán cotejarse con el OpenAPI del backend antes de implementar; no se presuponen endpoints por aparecer una pantalla en el HTML.
+
+1. **Configuración y HTTP compartido:** la URL base se definiría por ambiente mediante `VITE_API_BASE_URL` y se validaría al arrancar. No se fija una URL no comprobada. Las variables `VITE_*` son públicas y no deben contener secretos ([documentación de Vite](https://vite.dev/guide/env-and-mode)). Core expondría una instancia Axios con URL base, timeout y adaptación de errores; cada módulo implementaría sus servicios REST y DTO.
+2. **Login y Authorization:** auth enviaría los datos de acceso al contrato de autenticación acordado; solo una respuesta válida establecería identidad y roles. Un interceptor de petición añadiría el encabezado Authorization con esquema Bearer a las solicitudes autenticadas dirigidas a la API configurada, sin enviar tokens a terceros. El interceptor de respuesta centralizaría la invalidación por 401 ([interceptores de Axios](https://axios-http.com/docs/interceptors)).
+3. **Sesión y cierre:** mantener el access token preferiblemente en memoria; no persistir credenciales ni JWT en `localStorage`, documentos, logs o URLs. Si se acuerda renovación con backend, usar un mecanismo soportado por el contrato, por ejemplo cookie HttpOnly, Secure y política SameSite adecuada, con protección CSRF cuando corresponda; no se presupone que exista. Al cerrar sesión o vencer el acceso, borrar identidad, tokens y cachés privados, y volver al login; revocar la sesión en servidor solo si el contrato ofrece esa operación ([criterios OWASP sobre almacenamiento local](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html)).
+4. **Navegación protegida:** React Router resolvería las rutas y auth comprobaría sesión y roles antes de mostrar vistas protegidas: `COMPRADOR`, `ADMIN_ALMACEN`, `REPRESENTANTE_FUNDACION`, `ADMIN_STYLERADAR`. Sin sesión → login; sin permiso → aviso de acceso denegado y salida segura. Spring Boot debe verificar rol y propiedad del recurso en cada operación; el menú y la protección del cliente no sustituyen esa autorización ([rutas de React Router](https://reactrouter.com/start/declarative/routing)).
+5. **Estados visibles:** cada pantalla remota distinguiría `loading` (indicador y prevención de envíos duplicados), `error` (mensaje y reintento cuando sea seguro), `empty` (sin registros, con acción útil) y éxito (datos o confirmación). Conservar borradores al corregir validaciones; no reintentar automáticamente escrituras que puedan duplicarse.
+
+| Respuesta futura | Comportamiento previsto del cliente |
+|---|---|
+| 400 | Mostrar validaciones de campos y explicación general; conservar el borrador |
+| 401 | Credenciales inválidas en login: permitir corregir. En una operación protegida: invalidar sesión y solicitar ingreso, sin bucles de reintento |
+| 403 | Explicar falta de permisos; no repetir login automáticamente ni exponer datos restringidos |
+| 404 | Informar recurso ausente y ofrecer volver al listado; no inventar contenido |
+| 409 | Explicar conflicto de estado o duplicidad; recargar datos o corregir antes de reenviar |
+
+Esta política es diseño pendiente de implementación. La persistencia de datos de prueba del HTML es una simulación y no el modelo de seguridad de la futura aplicación.
+
+## Estado real del Sprint 4
+
+**Completado en esta entrega documental:** revisión final de Word/PDF 1.1, cinco diagramas PNG/SVG conservados, arquitectura modular consistente, actualización del README e índice, corrección del enlace al manual y validación de rutas locales. Véase la [evidencia de validación documental](docs/sprints/validacion-documental-sprint4.md).
+
+**Pendiente:** React, integración REST/JWT real, aprobación de contratos y distribución final de módulos, despliegue público y revisión funcional completa. Se conservan los pendientes del [plan de sprints 3 y 4](docs/sprints/sprint-3-y-4.md), incluidos RF-73/74/75, mascota, poses, responsive, errores, vacíos y entrega final. Agregar documentación no acredita el cierre completo del sprint.
 
 ---
 
@@ -348,7 +562,7 @@ Los archivos vectoriales están en [`assets/logo/`](assets/logo).
 
 ## Manual de identidad
 
-**Manual de identidad v11:** [StyleRadar_Manual_de_Identidad.html](docs/StyleRadar_Manual_de_Identidad.html). Descárgalo y ábrelo en el navegador; es una presentación de 11 diapositivas que incluye el diagrama de contexto. Las versiones anteriores están en [`docs/historico/`](docs/historico).
+**Manual de identidad vigente:** [StyleRadar_Manual_de_Identidadv2.html](docs/StyleRadar_Manual_de_Identidadv2.html). Descárgalo y ábrelo en el navegador; es una presentación de 11 diapositivas que incluye el diagrama de contexto. Se conserva el nombre real del archivo, cuyo título interno dice «Manual de identidad V3». Las versiones anteriores están en [`docs/historico/`](docs/historico).
 
 El manual cubre el diagrama de contexto, el problema y los tres públicos, el logo en modo claro y oscuro, la paleta, la tipografía, las combinaciones accesibles, los botones, títulos e iconos, la mascota, las funcionalidades clave y las aplicaciones en computador y celular. Este es el resumen:
 
