@@ -8,7 +8,7 @@
 
 El buscador de moda local con probador virtual.
 
-[**Ver el prototipo v3 →**](prototipo/index.html) · [Manual de identidad](docs/StyleRadar_Manual_de_Identidadv2.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
+[**Ver el prototipo v3 →**](prototipo/StyleRadar_prototipo/index.html) · [Manual de identidad](docs/StyleRadar_Manual_de_Identidadv2.html) · [Informe de cambios v3](docs/StyleRadar_Informe_de_cambios_v3.docx) · [Presentación Sprint 2](docs/StyleRadar_Presentacion.pdf)
 
 </div>
 
@@ -18,28 +18,63 @@ El buscador de moda local con probador virtual.
 
 ## Tabla de contenido
 
-1. [Participantes](#participantes)
-2. [Contexto del proyecto](#contexto-del-proyecto)
-3. [Estructura del repositorio](#estructura-del-repositorio)
-4. [Cómo ver el prototipo](#cómo-ver-el-prototipo)
-5. [Historial de sprints](#historial-de-sprints)
-6. [Versión 3: cambios y respuesta a la revisión](#versión-3-cambios-y-respuesta-a-la-revisión)
-7. [Requerimientos](#requerimientos)
-8. [Sprint 2: checklist de frontend y flujos por rol](#sprint-2-checklist-de-frontend-y-flujos-por-rol)
-9. [Sprint 3 y Sprint 4: plan de trabajo](#sprint-3-y-sprint-4-plan-de-trabajo)
-10. [Arquitectura frontend Sprint 4](#arquitectura-frontend-sprint-4)
-11. [Arquitectura de paquetes nivel 3](#arquitectura-de-paquetes-nivel-3)
-12. [Diagramas de navegación por rol](#diagramas-de-navegación-por-rol)
-13. [Documento completo de arquitectura](#documento-completo-de-arquitectura)
-14. [Prototipo navegable](#prototipo-navegable)
-15. [Pantallas y accesos por rol](#pantallas-y-accesos-por-rol)
-16. [Flujos exitosos y de error](#flujos-exitosos-y-de-error)
-17. [Tecnologías propuestas e integración futura con el backend Spring Boot](#tecnologías-propuestas-e-integración-futura-con-el-backend-spring-boot)
-18. [Estado real del Sprint 4](#estado-real-del-sprint-4)
-19. [Logotipo](#logotipo)
-20. [Manual de identidad](#manual-de-identidad)
-21. [Módulos](#módulos)
-22. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
+- [StyleRadar · Frontend](#styleradar--frontend)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Participantes](#participantes)
+  - [Contexto del proyecto](#contexto-del-proyecto)
+    - [Problemática](#problemática)
+    - [Actores](#actores)
+    - [Idea diferenciadora: Playlists de estilo](#idea-diferenciadora-playlists-de-estilo)
+  - [Estructura del repositorio](#estructura-del-repositorio)
+  - [Cómo ver el prototipo](#cómo-ver-el-prototipo)
+  - [Historial de sprints](#historial-de-sprints)
+    - [Sprint 1 · Mockups v1](#sprint-1--mockups-v1)
+    - [Sprint 2 · Prototipo v2 (revisión de mockups, parte 1)](#sprint-2--prototipo-v2-revisión-de-mockups-parte-1)
+    - [Sprint 2 · Prototipo v3 (revisión, parte 2)](#sprint-2--prototipo-v3-revisión-parte-2)
+  - [Versión 3: cambios y respuesta a la revisión](#versión-3-cambios-y-respuesta-a-la-revisión)
+    - [Ajustes finales de la v3](#ajustes-finales-de-la-v3)
+    - [Decisiones que se mantienen](#decisiones-que-se-mantienen)
+  - [Requerimientos](#requerimientos)
+    - [Funciones que la revisión no encontraba](#funciones-que-la-revisión-no-encontraba)
+  - [Sprint 2: checklist de frontend y flujos por rol](#sprint-2-checklist-de-frontend-y-flujos-por-rol)
+  - [Sprint 3 y Sprint 4: plan de trabajo](#sprint-3-y-sprint-4-plan-de-trabajo)
+    - [Sprint 3 · Corrección y base](#sprint-3--corrección-y-base)
+    - [Sprint 4 · Integración y cierre](#sprint-4--integración-y-cierre)
+  - [Arquitectura frontend Sprint 4](#arquitectura-frontend-sprint-4)
+  - [Arquitectura de paquetes nivel 3](#arquitectura-de-paquetes-nivel-3)
+  - [Diagramas de navegación por rol](#diagramas-de-navegación-por-rol)
+    - [1. Invitado](#1-invitado)
+    - [2. COMPRADOR](#2-comprador)
+    - [3. ADMIN\_ALMACEN](#3-admin_almacen)
+    - [4. REPRESENTANTE\_FUNDACION](#4-representante_fundacion)
+    - [5. ADMIN\_STYLERADAR](#5-admin_styleradar)
+  - [Documento completo de arquitectura](#documento-completo-de-arquitectura)
+  - [Prototipo navegable](#prototipo-navegable)
+  - [Pantallas y accesos por rol](#pantallas-y-accesos-por-rol)
+  - [Flujos exitosos y de error](#flujos-exitosos-y-de-error)
+  - [Tecnologías propuestas e integración futura con el backend Spring Boot](#tecnologías-propuestas-e-integración-futura-con-el-backend-spring-boot)
+  - [Estado real del Sprint 4](#estado-real-del-sprint-4)
+  - [Logotipo](#logotipo)
+  - [Manual de identidad](#manual-de-identidad)
+    - [Paleta de color · regla 60 · 30 · 10](#paleta-de-color--regla-60--30--10)
+    - [Tipografía: Poppins](#tipografía-poppins)
+    - [Botones e iconos](#botones-e-iconos)
+    - [Mascota: los amigos de StyleRadar](#mascota-los-amigos-de-styleradar)
+  - [Módulos](#módulos)
+    - [1. Acceso: inicio de sesión y registro](#1-acceso-inicio-de-sesión-y-registro)
+    - [2. Inicio y descubrimiento](#2-inicio-y-descubrimiento)
+    - [3. Catálogo: búsqueda y filtros](#3-catálogo-búsqueda-y-filtros)
+    - [4. Mapa de moda local y tiendas](#4-mapa-de-moda-local-y-tiendas)
+    - [5. Probador virtual](#5-probador-virtual)
+    - [6. Playlists de estilo](#6-playlists-de-estilo)
+    - [7. Segunda vida: vender, donar y chat](#7-segunda-vida-vender-donar-y-chat)
+    - [8. Perfil del usuario](#8-perfil-del-usuario)
+    - [9. Panel de la tienda](#9-panel-de-la-tienda)
+    - [10. Panel de la fundación](#10-panel-de-la-fundación)
+    - [11. Administración](#11-administración)
+    - [12. Cómo funciona y manual de identidad en la plataforma](#12-cómo-funciona-y-manual-de-identidad-en-la-plataforma)
+    - [13. Versión móvil](#13-versión-móvil)
+  - [Criterios de UX aplicados](#criterios-de-ux-aplicados)
 
 ---
 
@@ -123,7 +158,7 @@ styleradar-frontend-v3/
 
 ## Cómo ver el prototipo
 
-Abrir [`prototipo/index.html`](prototipo/index.html) en Chrome, Edge o Firefox. Todo el código, las fotos y los estilos están dentro de ese archivo, así que funciona sin conexión.
+Abrir [`prototipo/index.html`](prototipo/StyleRadar_prototipo/index.html) en Chrome, Edge o Firefox. Todo el código, las fotos y los estilos están dentro de ese archivo, así que funciona sin conexión.
 
 El prototipo simula los flujos de los cuatro actores. Para entrar, usa las **cuentas de prueba** del inicio de sesión. La contraseña de todas es `1234`:
 
@@ -482,7 +517,7 @@ La revisión documental final unifica **1.1** en portada, control, encabezados, 
 
 ## Prototipo navegable
 
-El prototipo oficial es [`prototipo/index.html`](prototipo/index.html), un **HTML navegable que simula los flujos de la aplicación**. StyleRadar no tiene un prototipo existente en Figma. Se abre localmente siguiendo [Cómo ver el prototipo](#cómo-ver-el-prototipo); las cuentas allí indicadas son exclusivamente datos de demostración del HTML.
+El prototipo oficial es [`prototipo/index.html`](prototipo/StyleRadar_prototipo/index.html), un **HTML navegable que simula los flujos de la aplicación**. StyleRadar no tiene un prototipo existente en Figma. Se abre localmente siguiendo [Cómo ver el prototipo](#cómo-ver-el-prototipo); las cuentas allí indicadas son exclusivamente datos de demostración del HTML.
 
 No consume el backend Spring Boot ni autentica con JWT real. No se ha comprobado una URL de despliegue público. El archivo HTML se conserva sin modificaciones en esta entrega.
 
