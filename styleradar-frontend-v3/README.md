@@ -38,8 +38,9 @@ El buscador de moda local con probador virtual.
 18. [Estado real del Sprint 4](#estado-real-del-sprint-4)
 19. [Logotipo](#logotipo)
 20. [Manual de identidad](#manual-de-identidad)
-21. [Módulos](#módulos)
-22. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
+21. [Plantilla institucional](#plantilla-institucional)
+22. [Módulos](#módulos)
+23. [Criterios de UX aplicados](#criterios-de-ux-aplicados)
 
 ---
 
@@ -111,6 +112,10 @@ styleradar-frontend-v3/
 │   │   ├── validacion-documental-sprint4-v2.md
 │   │   ├── validacion-documental-sprint4.md # evidencia histórica v1.1
 │   │   └── sprint-3-y-4.md              # plan conservado
+│   ├── plantillas/
+│   │   ├── StyleRadar_Plantilla_Institucional_Editable_v1.docx
+│   │   ├── plantilla-institucional-styleradar.html
+│   │   └── README.md                    # guía de uso del paquete
 │   ├── StyleRadar_Manual_de_Identidadv2.html # vigente, intacto
 │   ├── StyleRadar_Informe_de_cambios_v3.docx # antecedente
 │   ├── StyleRadar_Presentacion.pdf
@@ -641,6 +646,26 @@ La mascota es un grupo de cinco amigos de Bogotá. Cada uno viste a su modo y re
 | Aura | Futuro | Funcional, innovadora y de estética urbana |
 | Nora | Rebelde | Libertad, vintage y sin etiquetas |
 | Tomás | Esencial | Simple, de calidad y con equilibrio |
+
+---
+
+## Plantilla institucional
+
+La plantilla institucional editable de StyleRadar está disponible en `docs/plantillas/`. Los tres archivos se incorporan íntegros desde el paquete recibido, sin cambiar su contenido ni sus imágenes.
+
+| Recurso | Ubicación y uso |
+|---|---|
+| [Plantilla Word editable](docs/plantillas/StyleRadar_Plantilla_Institucional_Editable_v1.docx) | Descargar y guardar una copia para cada entregable. |
+| [Plantilla HTML](docs/plantillas/plantilla-institucional-styleradar.html) | Descargar el repositorio y abrir en Chrome conservando la jerarquía de carpetas; GitHub muestra el código fuente. |
+| [Guía de uso](docs/plantillas/README.md) | Instrucciones del paquete para reutilizar las plantillas. |
+
+Sustituir los textos de ejemplo y los campos entre corchetes en una copia, incorporar el contenido completo del entregable y sus evidencias, y revisar el PDF exportado antes de entregar. Mantener Poppins y las reglas del [manual oficial](docs/StyleRadar_Manual_de_Identidadv2.html): grafito `#262626`, blanco `#FFFFFF`, arena `#E8DCCB`, lavanda `#B9B9CA` y violeta `#48119A`. No se distribuyen archivos de fuentes; el HTML solicita Poppins a Google Fonts y Word depende de las fuentes disponibles en el equipo.
+
+El HTML contiene portada, desarrollo, tabla y pies de página. Sus rutas `../../assets/` cargan el logotipo oficial y las cinco mascotas originales: Antonia, Mateo, Aura, Nora y Tomás. Conservar esas rutas y las proporciones; no copiar únicamente el HTML a una carpeta distinta.
+
+**Verificación y observaciones del Word recibido:** se abrió en Microsoft Word 16 en modo de solo lectura y se revisaron las cinco páginas exportadas. Contiene Poppins, logotipo, los cinco personajes en una captura, desarrollo, tablas y pie. Las páginas 2 y 4 solo muestran encabezado/pie, y el estilo del título de portada conserva una línea azul `#4F81BD`, ajena a la paleta oficial. Estos elementos pertenecen al archivo original: la conformidad cromática completa y la paginación quedan pendientes de revisión en una versión posterior, sin alterar este paquete.
+
+**Estado de STR-465:** plantilla disponible para reutilización y enlaces verificados. La incorporación al repositorio no demuestra su adopción: queda pendiente comprobar y registrar su uso efectivo en marketing, arquitectura y presentación. No se declara cierre integral del criterio de adopción ni se modifica la arquitectura aprobada para aplicarle la plantilla.
 
 ---
 
