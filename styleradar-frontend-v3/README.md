@@ -651,7 +651,7 @@ La mascota es un grupo de cinco amigos de Bogotá. Cada uno viste a su modo y re
 
 ## Plantilla institucional
 
-La plantilla institucional editable de StyleRadar está disponible en `docs/plantillas/`. Los tres archivos se incorporan íntegros desde el paquete recibido, sin cambiar su contenido ni sus imágenes.
+La plantilla institucional editable de StyleRadar está disponible en `docs/plantillas/`. El Word se actualizó desde el paquete corregido del PR #6 y recibió un ajuste mínimo de espaciado para mantener la leyenda junto a su imagen. El HTML y la guía coinciden íntegramente con los ya publicados; se conservan todo el contenido y las imágenes del Word.
 
 | Recurso | Ubicación y uso |
 |---|---|
@@ -663,9 +663,19 @@ Sustituir los textos de ejemplo y los campos entre corchetes en una copia, incor
 
 El HTML contiene portada, desarrollo, tabla y pies de página. Sus rutas `../../assets/` cargan el logotipo oficial y las cinco mascotas originales: Antonia, Mateo, Aura, Nora y Tomás. Conservar esas rutas y las proporciones; no copiar únicamente el HTML a una carpeta distinta.
 
-**Verificación y observaciones del Word recibido:** se abrió en Microsoft Word 16 en modo de solo lectura y se revisaron las cinco páginas exportadas. Contiene Poppins, logotipo, los cinco personajes en una captura, desarrollo, tablas y pie. Las páginas 2 y 4 solo muestran encabezado/pie, y el estilo del título de portada conserva una línea azul `#4F81BD`, ajena a la paleta oficial. Estos elementos pertenecen al archivo original: la conformidad cromática completa y la paginación quedan pendientes de revisión en una versión posterior, sin alterar este paquete.
+**Verificación del Word corregido:** se abrió en Microsoft Word 16 en modo de solo lectura y se revisaron las tres páginas exportadas. El borde de portada es violeta `#48119A`; no hay páginas vacías intermedias ni leyendas separadas de su imagen. Portada, desarrollo, tablas, logotipo, cinco personajes, encabezados y pies son legibles y mantienen su ubicación. Poppins figura como fuente normal y se renderiza en el equipo de revisión. Todo el texto, las tres imágenes incrustadas y las tres tablas se conservan.
 
-**Estado de STR-465:** plantilla disponible para reutilización y enlaces verificados. La incorporación al repositorio no demuestra su adopción: queda pendiente comprobar y registrar su uso efectivo en marketing, arquitectura y presentación. No se declara cierre integral del criterio de adopción ni se modifica la arquitectura aprobada para aplicarle la plantilla.
+El SHA-256 del Word de entrada se confirmó como `38bb6877b94c96745752a7f572e2fff7785a1b66858b2f6dfdd8e17683754fe8`. En Word todavía dejaba una página casi vacía con la leyenda de la figura. Para resolverlo, se redujo de 9 a 0 pt el espaciado posterior de dos párrafos: la imagen de referencia y su leyenda. No se redimensionaron imágenes ni se modificaron otros componentes del DOCX. El SHA-256 final es `80c48ffee1f566ed77c2a5a4ef109691f4dc5d22b83bc0627e7a76f3740d7315`.
+
+**Adopción comprobada de STR-465 — revisión del repositorio del 19 de octubre de 2026:** la disponibilidad y validación de la plantilla no equivalen a su uso en todos los entregables.
+
+| Entregable | Evidencia revisada | Estado comprobado | Pendiente real |
+|---|---|---|---|
+| Arquitectura | [Word v2.0](docs/arquitectura/StyleRadar_Arquitectura_Frontend_v2_0.docx) y [PDF v2.0](docs/arquitectura/StyleRadar_Arquitectura_Frontend_v2_0.pdf), 24 páginas | Identidad visual existente: logotipo, colores de marca y capturas. No se acredita que se haya elaborado con esta plantilla editable v1. | Registrar la trazabilidad o aceptación del formato existente por el responsable. Se conservan íntegros los dos documentos aprobados. |
+| Marketing | Inventario de archivos versionados; no se localizó un entregable específico de marketing. Las menciones en la plantilla son ejemplos de uso. | Adopción no comprobable con los archivos disponibles. | Aportar el entregable o un enlace verificable y comprobar su aplicación de la plantilla con el responsable. |
+| Presentación | [StyleRadar_Presentacion.pdf](docs/StyleRadar_Presentacion.pdf), 10 diapositivas | Presentación histórica de Sprint 2; su portada usa la mascota anterior Kai y no corresponde a esta plantilla vigente. | Aportar una presentación actual que aplique la identidad y plantilla vigentes, y registrar su revisión. Se conserva el antecedente histórico. |
+
+La corrección del Word y la publicación de recursos están comprobadas; el criterio de adopción por los tres entregables permanece abierto con los pendientes anteriores. No se modifica el estado de Jira ni se reformatean documentos aprobados o de otros integrantes.
 
 ---
 
