@@ -1022,3 +1022,43 @@ html.sr-guest #tiendas{ display:none; }
    Los usuarios con sesión lo siguen viendo igual. */
 html.sr-guest #probador,
 html.sr-guest section.pv-sec{ display:none !important; }
+/* Ajuste inicial de viewport: anclas y controles del probador en pantallas pequeñas. */
+@media (max-width: 900px) {
+  main > section[id]:not(#inicio) {
+    scroll-margin-top: 84px;
+  }
+
+  .auth-stack {
+    padding-top: 72px;
+  }
+
+  .auth-stack > .auth-card,
+  .auth-stack #signCard {
+    max-height: calc(100% - 16px) !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .cz-stage-wrap {
+    padding-top: 144px;
+  }
+
+  .cz-tr {
+    top: 50px;
+    left: 16px;
+    right: 16px;
+    flex-wrap: wrap;
+  }
+
+  .cz-tr .seg-mini {
+    flex-shrink: 0;
+  }
+
+  .cz-tr button {
+    min-height: 32px;
+  }
+
+  .cz-photo {
+    top: 144px;
+  }
+}

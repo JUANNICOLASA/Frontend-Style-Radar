@@ -1,0 +1,188 @@
+{
+  "base": "951ed02e22b6baf1d19bff3384d3ae7436f3798a",
+  "browser": "Chrome/154.0.8037.57",
+  "sizes": [
+    {
+      "width": 390,
+      "height": 844,
+      "mobile": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "mobile": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "mobile": false
+    }
+  ],
+  "comparisonPairs": 47,
+  "uiChecks": 364,
+  "uiPassed": 364,
+  "routerChecks": 285,
+  "routerPassed": 285,
+  "otherUiChecks": 79,
+  "normalMotionScreens": 23,
+  "imagesPublished": 149,
+  "jsExceptions": 0,
+  "unchangedConsoleErrorSignatures": {
+    "network | Failed to load resource: the server responded with a status of 404 (Not Found)": 1,
+    "rendering | Error: <rect> attribute width: A negative value is not valid. (\"-0.6\")": 1368,
+    "rendering | Error: <rect> attribute width: A negative value is not valid. (\"-112\")": 228,
+    "rendering | Error: <rect> attribute width: A negative value is not valid. (\"-16\")": 114
+  },
+  "baselineUiFailed": [
+    {
+      "size": "movil",
+      "test": "probador-controles",
+      "passed": false,
+      "rects": [
+        {
+          "id": "czMode",
+          "x": 40.515625,
+          "y": 162,
+          "w": 198.234375,
+          "h": 30.5
+        },
+        {
+          "id": "czSrc",
+          "x": 24.515625,
+          "y": 160,
+          "w": 166.15625,
+          "h": 41
+        },
+        {
+          "id": "czSex",
+          "x": 196.671875,
+          "y": 160,
+          "w": 152.90625,
+          "h": 41
+        },
+        {
+          "id": "czUndress",
+          "x": 361.578125,
+          "y": 160,
+          "w": 108.515625,
+          "h": 41
+        }
+      ],
+      "overlap": true,
+      "inside": true
+    },
+    {
+      "size": "tablet",
+      "test": "probador-controles",
+      "passed": false,
+      "rects": [
+        {
+          "id": "czMode",
+          "x": 40.515625,
+          "y": 162,
+          "w": 208.078125,
+          "h": 30.5
+        },
+        {
+          "id": "czSrc",
+          "x": 24.515625,
+          "y": 160,
+          "w": 166.15625,
+          "h": 41
+        },
+        {
+          "id": "czSex",
+          "x": 196.671875,
+          "y": 160,
+          "w": 152.90625,
+          "h": 41
+        },
+        {
+          "id": "czUndress",
+          "x": 361.578125,
+          "y": 160,
+          "w": 108.515625,
+          "h": 41
+        }
+      ],
+      "overlap": true,
+      "inside": true
+    }
+  ],
+  "uiInputMethod": "HTMLElement.click() con comprobación elementFromPoint; no certifica toques físicos",
+  "beforeViewport": [
+    {
+      "size": {
+        "name": "movil",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "innerWidth": 980,
+      "compatMode": "BackCompat"
+    },
+    {
+      "size": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024,
+        "mobile": true
+      },
+      "innerWidth": 980,
+      "compatMode": "BackCompat"
+    },
+    {
+      "size": {
+        "name": "escritorio",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "innerWidth": 1440,
+      "compatMode": "BackCompat"
+    }
+  ],
+  "afterViewport": [
+    {
+      "size": {
+        "name": "movil",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "innerWidth": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "compatMode": "CSS1Compat"
+    },
+    {
+      "size": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024,
+        "mobile": true
+      },
+      "innerWidth": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "compatMode": "CSS1Compat"
+    },
+    {
+      "size": {
+        "name": "escritorio",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "innerWidth": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "compatMode": "CSS1Compat"
+    }
+  ],
+  "preservation": {
+    "unchangedFiles": 320,
+    "js": 20,
+    "images": 173
+  }
+}
