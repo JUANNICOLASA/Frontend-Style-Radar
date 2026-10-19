@@ -359,6 +359,7 @@
   const me = () => session || tmpSession;
   const acct = () => me() ? DB.accounts[me().email] : null;
   const role = () => (acct() || {}).role || null;
+  function authChanged(){ dispatchEvent(new Event('sr:authchange')); }
   let GUEST = null;
   const U = () => { const s = me(); if (!s) return GUEST || (GUEST = seedUser('invitado', false)); if (!DB.users[s.email]) DB.users[s.email] = seedUser(s.email, false); return DB.users[s.email]; };
   const HOME = {user:'#inicio', store:'#/mi-tienda', found:'#/mi-fundacion', admin:'#/admin/resumen'};
@@ -563,6 +564,7 @@
     if (!ok) return;
     session = null; tmpSession = null; mem.del('session');
     GUEST = null;
+    authChanged();
     renderNav();
     if (location.hash.startsWith('#/')) location.hash = '#inicio'; else route();
     scrollTo(0, 0); dispatchEvent(new Event('scroll')); toast('Sesión cerrada');
@@ -704,6 +706,7 @@
   async function login(email, remember, isNew){
     const s = {email}; if (remember){ session = s; mem.set('session', s); } else { tmpSession = s; mem.del('session'); }
     GUEST = null;
+    authChanged();
     const a = DB.accounts[email];
     await closeAuth();
     renderNav();
@@ -757,7 +760,7 @@
   function route(){
     const {h, path, q} = parseHash();
     $$('.umenu').forEach(m => m.remove()); const np = $('#notif'); if (np) np.hidden = true;
-    if (me() && !acct()){ session = null; tmpSession = null; mem.del('session'); }
+    if (me() && !acct()){ session = null; tmpSession = null; mem.del('session'); authChanged(); }
     const r = role() || 'guest';
     document.body.dataset.role = r;
     if (!path.startsWith('#/')){
@@ -798,7 +801,7 @@
   const veil = () => { const v = $('#navVeil'); if (v) v.classList.toggle('on', scrollY > 30); };
   addEventListener('scroll', veil, {passive:true}); addEventListener('hashchange', () => setTimeout(veil, 60));
   function start(){
-    if (me() && !acct()){ session = null; tmpSession = null; mem.del('session'); }
+    if (me() && !acct()){ session = null; tmpSession = null; mem.del('session'); authChanged(); }
     renderNav(); route();
   }
 

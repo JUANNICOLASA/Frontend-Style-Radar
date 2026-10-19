@@ -1,0 +1,5140 @@
+{
+  "phase": "despues",
+  "browser": "Chrome/154.0.8037.57",
+  "base": "0c60fabffd425da0585ee3bd300ebdcd0558d248",
+  "inputMethod": "DOM click con hit-test; formularios reales de la demo",
+  "cases": [
+    {
+      "size": "movil",
+      "id": "T01",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "action": "Abrir portada sin sesión",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T02",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "action": "Abrir Tiendas desde navegación pública",
+      "expected": {
+        "role": null,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T03",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "action": "Login comprador con Recordarme desmarcado; observar al primer estado autenticado",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 829.3999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T04",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 829.3999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Abrir Tiendas sin Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 829.3999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T05",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "action": "Login comprador con Recordarme; observar al primer estado autenticado",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 954.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T06",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 954.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Abrir Tiendas con Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 954.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T07",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 954.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Confirmar logout en sesión persistente y temporal",
+      "expected": {
+        "role": null,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 957.2000000476837,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1020.9000000953674,
+            "role": null,
+            "guest": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "mode": "persistente",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#tiendas",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 954.2000000476837,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 1131.6000001430511,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "mode": "temporal",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 957.2000000476837,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 1020.9000000953674,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T08",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 983,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Cancelar logout en ambos tipos de sesión",
+      "expected": {
+        "role": "user",
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 950.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [
+        {
+          "mode": "temporal",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 983,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "mode": "persistente",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": true,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 950.2000000476837,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T09",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 942.7999999523163,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Recargar con sesión temporal",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T10",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 975.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Recargar con sesión persistente",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T11",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Alternar portada, catálogo y tiendas sin Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [
+        {
+          "hash": "#/catalogo",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": false,
+            "visible": "ninguna",
+            "hash": "#/catalogo",
+            "view": "catalogo",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 952.9000000953674,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#inicio",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 952.9000000953674,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#tiendas",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#tiendas",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 952.9000000953674,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#/catalogo",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": false,
+            "visible": "ninguna",
+            "hash": "#/catalogo",
+            "view": "catalogo",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 952.9000000953674,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#inicio",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 952.9000000953674,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T12",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "store",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "mi-tienda"
+      },
+      "observed": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1383.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2019,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T13",
+      "initial": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1383.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2019,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "found",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "mi-fundacion"
+      },
+      "observed": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1383.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2019,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 2148.600000143051,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2886.4000000953674,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T14",
+      "initial": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1383.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2019,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 2148.600000143051,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2886.4000000953674,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "admin",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "admin"
+      },
+      "observed": {
+        "role": "admin",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/admin/resumen",
+        "view": "admin",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 952.9000000953674,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1383.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2019,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 2148.600000143051,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2886.4000000953674,
+            "role": "found",
+            "guest": false
+          },
+          {
+            "time": 2991.600000143051,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 3647.100000143051,
+            "role": "admin",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T15",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "action": "Probar sesiones inválidas al cargar y al invalidar la cuenta en memoria",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 963,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 989.9000000953674,
+            "role": null,
+            "guest": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "variant": "cuenta-inexistente",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "objeto-vacio",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "json-invalido",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": true,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "invalidacion-en-memoria",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 390,
+            "clientWidth": 390,
+            "scrollWidth": 390,
+            "authEvents": [
+              {
+                "time": 963,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 989.9000000953674,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "movil",
+      "id": "T16",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "action": "Recargar con preferencias ajenas a autenticación en ambos almacenamientos",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T01",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "action": "Abrir portada sin sesión",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T02",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "action": "Abrir Tiendas desde navegación pública",
+      "expected": {
+        "role": null,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T03",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "action": "Login comprador con Recordarme desmarcado; observar al primer estado autenticado",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 944.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T04",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 944.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Abrir Tiendas sin Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 944.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T05",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "action": "Login comprador con Recordarme; observar al primer estado autenticado",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 964.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T06",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 964.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Abrir Tiendas con Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 964.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T07",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 964.9000000953674,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Confirmar logout en sesión persistente y temporal",
+      "expected": {
+        "role": null,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 940.6000001430511,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 980.9000000953674,
+            "role": null,
+            "guest": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "mode": "persistente",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#tiendas",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 964.9000000953674,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 1157.4000000953674,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "mode": "temporal",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 940.6000001430511,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 980.9000000953674,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T08",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 987.5999999046326,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Cancelar logout en ambos tipos de sesión",
+      "expected": {
+        "role": "user",
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 958.8000001907349,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [
+        {
+          "mode": "temporal",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 987.5999999046326,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "mode": "persistente",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": true,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 958.8000001907349,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T09",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 957.5999999046326,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Recargar con sesión temporal",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T10",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 949.5,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Recargar con sesión persistente",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T11",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Alternar portada, catálogo y tiendas sin Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [
+        {
+          "hash": "#/catalogo",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": false,
+            "visible": "ninguna",
+            "hash": "#/catalogo",
+            "view": "catalogo",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 956.6999998092651,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#inicio",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 956.6999998092651,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#tiendas",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#tiendas",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 956.6999998092651,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#/catalogo",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": false,
+            "visible": "ninguna",
+            "hash": "#/catalogo",
+            "view": "catalogo",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 956.6999998092651,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#inicio",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 956.6999998092651,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T12",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "store",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "mi-tienda"
+      },
+      "observed": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1486.6999998092651,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2124.5999999046326,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T13",
+      "initial": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1486.6999998092651,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2124.5999999046326,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "found",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "mi-fundacion"
+      },
+      "observed": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1486.6999998092651,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2124.5999999046326,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 2251.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2975.7999999523163,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T14",
+      "initial": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1486.6999998092651,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2124.5999999046326,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 2251.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2975.7999999523163,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "admin",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "admin"
+      },
+      "observed": {
+        "role": "admin",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/admin/resumen",
+        "view": "admin",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 956.6999998092651,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1486.6999998092651,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2124.5999999046326,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 2251.2999999523163,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2975.7999999523163,
+            "role": "found",
+            "guest": false
+          },
+          {
+            "time": 3102.0999999046326,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 3761.5,
+            "role": "admin",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T15",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "action": "Probar sesiones inválidas al cargar y al invalidar la cuenta en memoria",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 957.2000000476837,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 994.0999999046326,
+            "role": null,
+            "guest": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "variant": "cuenta-inexistente",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "objeto-vacio",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "json-invalido",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": true,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "invalidacion-en-memoria",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 768,
+            "clientWidth": 768,
+            "scrollWidth": 768,
+            "authEvents": [
+              {
+                "time": 957.2000000476837,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 994.0999999046326,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "tablet",
+      "id": "T16",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "action": "Recargar con preferencias ajenas a autenticación en ambos almacenamientos",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T01",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "action": "Abrir portada sin sesión",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T02",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "action": "Abrir Tiendas desde navegación pública",
+      "expected": {
+        "role": null,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T03",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "action": "Login comprador con Recordarme desmarcado; observar al primer estado autenticado",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 976.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T04",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 976.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Abrir Tiendas sin Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 976.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T05",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "action": "Login comprador con Recordarme; observar al primer estado autenticado",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 938.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T06",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 938.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Abrir Tiendas con Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 938.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T07",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 938.6999998092651,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Confirmar logout en sesión persistente y temporal",
+      "expected": {
+        "role": null,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 954.5999999046326,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1020.2999999523163,
+            "role": null,
+            "guest": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "mode": "persistente",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#tiendas",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 938.6999998092651,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 1114.6999998092651,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "mode": "temporal",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 954.5999999046326,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 1020.2999999523163,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T08",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 943,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Cancelar logout en ambos tipos de sesión",
+      "expected": {
+        "role": "user",
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 999.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [
+        {
+          "mode": "temporal",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 943,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "mode": "persistente",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": true,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 999.2000000476837,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T09",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 927.7000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Recargar con sesión temporal",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T10",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 962.7999999523163,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Recargar con sesión persistente",
+      "expected": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T11",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Alternar portada, catálogo y tiendas sin Recordarme",
+      "expected": {
+        "role": "user",
+        "persistent": false,
+        "guest": false,
+        "visible": "comprador"
+      },
+      "observed": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [
+        {
+          "hash": "#/catalogo",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": false,
+            "visible": "ninguna",
+            "hash": "#/catalogo",
+            "view": "catalogo",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 1005,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#inicio",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 1005,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#tiendas",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#tiendas",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 1005,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#/catalogo",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": false,
+            "visible": "ninguna",
+            "hash": "#/catalogo",
+            "view": "catalogo",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 1005,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "hash": "#inicio",
+          "observed": {
+            "role": "user",
+            "memorySession": true,
+            "persistent": false,
+            "guest": false,
+            "publicStores": false,
+            "buyerStores": true,
+            "visible": "comprador",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 1005,
+                "role": "user",
+                "guest": false
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T12",
+      "initial": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "store",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "mi-tienda"
+      },
+      "observed": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T13",
+      "initial": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "found",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "mi-fundacion"
+      },
+      "observed": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 3498.399999856949,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 4251.199999809265,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T14",
+      "initial": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 3498.399999856949,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 4251.199999809265,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      },
+      "action": "Logout confirmado y login del siguiente rol sin Recordarme",
+      "expected": {
+        "role": "admin",
+        "persistent": false,
+        "guest": false,
+        "visible": "ninguna",
+        "view": "admin"
+      },
+      "observed": {
+        "role": "admin",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/admin/resumen",
+        "view": "admin",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 3498.399999856949,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 4251.199999809265,
+            "role": "found",
+            "guest": false
+          },
+          {
+            "time": 5468.699999809265,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 6154.899999856949,
+            "role": "admin",
+            "guest": false
+          }
+        ]
+      },
+      "checks": [],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T15",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "action": "Probar sesiones inválidas al cargar y al invalidar la cuenta en memoria",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 952.1000001430511,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 992,
+            "role": null,
+            "guest": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "variant": "cuenta-inexistente",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "objeto-vacio",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "json-invalido",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": true,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": []
+          },
+          "passed": true
+        },
+        {
+          "variant": "invalidacion-en-memoria",
+          "observed": {
+            "role": null,
+            "memorySession": false,
+            "persistent": false,
+            "guest": true,
+            "publicStores": true,
+            "buyerStores": false,
+            "visible": "publica",
+            "hash": "#inicio",
+            "view": "portada",
+            "authOpen": false,
+            "compatMode": "CSS1Compat",
+            "charset": "UTF-8",
+            "doctype": "html",
+            "viewport": "width=device-width, initial-scale=1",
+            "innerWidth": 1440,
+            "clientWidth": 1425,
+            "scrollWidth": 1425,
+            "authEvents": [
+              {
+                "time": 952.1000001430511,
+                "role": "user",
+                "guest": false
+              },
+              {
+                "time": 992,
+                "role": null,
+                "guest": true
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "size": "escritorio",
+      "id": "T16",
+      "initial": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "action": "Recargar con preferencias ajenas a autenticación en ambos almacenamientos",
+      "expected": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "visible": "publica"
+      },
+      "observed": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "checks": [],
+      "status": "PASS"
+    }
+  ],
+  "shots": [
+    {
+      "size": "movil",
+      "id": "T02-invitado",
+      "file": "movil-T02-invitado.jpg",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      }
+    },
+    {
+      "size": "movil",
+      "id": "T04-sin-recordarme",
+      "file": "movil-T04-sin-recordarme.jpg",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 829.3999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "movil",
+      "id": "menu-comprador",
+      "file": "movil-menu-comprador.jpg",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 1137.7999999523163,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "tablet",
+      "id": "T02-invitado",
+      "file": "tablet-T02-invitado.jpg",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      }
+    },
+    {
+      "size": "tablet",
+      "id": "T04-sin-recordarme",
+      "file": "tablet-T04-sin-recordarme.jpg",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 944.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T02-invitado",
+      "file": "escritorio-T02-invitado.jpg",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T04-sin-recordarme",
+      "file": "escritorio-T04-sin-recordarme.jpg",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 976.8999998569489,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T07-logout",
+      "file": "escritorio-T07-logout.jpg",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 954.5999999046326,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1020.2999999523163,
+            "role": null,
+            "guest": true
+          }
+        ]
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T08-cancelado",
+      "file": "escritorio-T08-cancelado.jpg",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": true,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 999.2000000476837,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T12-panel",
+      "file": "escritorio-T12-panel.jpg",
+      "state": {
+        "role": "store",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-tienda",
+        "view": "mi-tienda",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T13-panel",
+      "file": "escritorio-T13-panel.jpg",
+      "state": {
+        "role": "found",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/mi-fundacion",
+        "view": "mi-fundacion",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 3498.399999856949,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 4251.199999809265,
+            "role": "found",
+            "guest": false
+          }
+        ]
+      }
+    },
+    {
+      "size": "escritorio",
+      "id": "T14-panel",
+      "file": "escritorio-T14-panel.jpg",
+      "state": {
+        "role": "admin",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": false,
+        "visible": "ninguna",
+        "hash": "#/admin/resumen",
+        "view": "admin",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1005,
+            "role": "user",
+            "guest": false
+          },
+          {
+            "time": 1618.8999998569489,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 2282.5,
+            "role": "store",
+            "guest": false
+          },
+          {
+            "time": 3498.399999856949,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 4251.199999809265,
+            "role": "found",
+            "guest": false
+          },
+          {
+            "time": 5468.699999809265,
+            "role": null,
+            "guest": true
+          },
+          {
+            "time": 6154.899999856949,
+            "role": "admin",
+            "guest": false
+          }
+        ]
+      }
+    }
+  ],
+  "responsive": [
+    {
+      "size": "movil",
+      "scene": "portada",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "passed": true
+    },
+    {
+      "size": "movil",
+      "scene": "publica",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": []
+      },
+      "passed": true
+    },
+    {
+      "size": "movil",
+      "scene": "comprador",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "authEvents": [
+          {
+            "time": 1137.7999999523163,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "size": "tablet",
+      "scene": "portada",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "passed": true
+    },
+    {
+      "size": "tablet",
+      "scene": "publica",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": []
+      },
+      "passed": true
+    },
+    {
+      "size": "tablet",
+      "scene": "comprador",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 768,
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "authEvents": [
+          {
+            "time": 1085.7999999523163,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "size": "escritorio",
+      "scene": "portada",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#inicio",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "passed": true
+    },
+    {
+      "size": "escritorio",
+      "scene": "publica",
+      "state": {
+        "role": null,
+        "memorySession": false,
+        "persistent": false,
+        "guest": true,
+        "publicStores": true,
+        "buyerStores": false,
+        "visible": "publica",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": []
+      },
+      "passed": true
+    },
+    {
+      "size": "escritorio",
+      "scene": "comprador",
+      "state": {
+        "role": "user",
+        "memorySession": true,
+        "persistent": false,
+        "guest": false,
+        "publicStores": false,
+        "buyerStores": true,
+        "visible": "comprador",
+        "hash": "#tiendas",
+        "view": "portada",
+        "authOpen": false,
+        "compatMode": "CSS1Compat",
+        "charset": "UTF-8",
+        "doctype": "html",
+        "viewport": "width=device-width, initial-scale=1",
+        "innerWidth": 1440,
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "authEvents": [
+          {
+            "time": 1169.2999999523163,
+            "role": "user",
+            "guest": false
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "exceptions": [],
+  "consoleErrorCount": 7,
+  "consoleErrors": [
+    {
+      "scene": "boot",
+      "source": "network",
+      "level": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "timestamp": 1792384939048.782,
+      "url": "http://127.0.0.1:54000/favicon.ico",
+      "networkRequestId": "13700.205",
+      "count": 7
+    }
+  ],
+  "httpErrors": [
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 404
+    }
+  ]
+}

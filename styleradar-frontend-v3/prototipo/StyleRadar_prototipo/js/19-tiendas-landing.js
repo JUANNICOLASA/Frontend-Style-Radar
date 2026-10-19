@@ -5,22 +5,10 @@
 (function () {
   var root = document.documentElement;
 
-  /* ¿hay sesión? Revisa las claves de almacenamiento típicas.
-     Si tu sesión se guarda con otro nombre, agrégalo a la lista KEYS. */
-  var KEYS = /(sess|auth|login|logged|token|currentuser|current_user|usuario|user)/i;
+  /* SRX es la fuente de verdad, también para sesiones temporales en memoria. */
   function hasSession() {
-    try {
-      var stores = [window.localStorage, window.sessionStorage];
-      for (var s = 0; s < stores.length; s++) {
-        for (var i = 0; i < stores[s].length; i++) {
-          var k = stores[s].key(i);
-          if (!KEYS.test(k)) continue;
-          var v = stores[s].getItem(k);
-          if (v && v !== 'null' && v !== '{}' && v !== '""' && v !== 'false') return true;
-        }
-      }
-    } catch (e) {}
-    return false;
+    var auth = window.SRX;
+    return !!(auth && auth.me() && auth.role());
   }
 
   function sync() { root.classList.toggle('sr-guest', !hasSession()); }
@@ -56,9 +44,9 @@
   sync();
   var tries = 0;
   var timer = setInterval(function () {
-    sync();                                  /* detecta iniciar/cerrar sesión sin recargar */
     if (tries < 40 && !fillImages()) tries++; else if (tries < 40) tries = 40;
   }, 700);
+  window.addEventListener('sr:authchange', sync);
   window.addEventListener('storage', sync);
   window.addEventListener('hashchange', sync);
 })();
